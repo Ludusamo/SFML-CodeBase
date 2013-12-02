@@ -14,7 +14,7 @@ public:
     virtual void render(sf::RenderWindow &window);
 protected:
     InputManager input;
-    std::vector<int> keys;
+    std::vector<sf::Keyboard::Key> keys;
 private:
 };
 

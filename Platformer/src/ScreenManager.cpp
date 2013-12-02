@@ -7,15 +7,6 @@ ScreenManager &ScreenManager::getInstance() {
     return instance;
 }
 
-ScreenManager::ScreenManager() {
-    transition = false;
-    file.loadContent("Input", attributes, content);
-}
-
-ScreenManager::~ScreenManager() {
-    //dtor
-}
-
 void ScreenManager::Transition(sf::RenderWindow &window) {
     if (transition) {
         fade.update(window);

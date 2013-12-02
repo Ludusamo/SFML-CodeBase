@@ -10,8 +10,6 @@ int main() {
     ScreenManager::getInstance().initialize();
     ScreenManager::getInstance().loadContent();
 
-    window.setKeyRepeatEnabled(false);
-
     while (window.isOpen()) {
         sf::Event event;
 
@@ -23,7 +21,6 @@ int main() {
         window.clear();
 
         ScreenManager::getInstance().update(window, event);
-
         ScreenManager::getInstance().render(window);
 
         window.display();

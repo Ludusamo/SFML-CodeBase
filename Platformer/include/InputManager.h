@@ -10,10 +10,8 @@ public:
     ~InputManager();
 
     void update(sf::Event event);
-    bool keyPressed(int key);
-    bool keyPressed(std::vector<int> keys);
-    bool keyReleased(int key);
-    bool keyReleased(std::vector<int> keys);
+    bool keyPressed(sf::Keyboard::Key key);
+    bool keyPressed(std::vector<sf::Keyboard::Key> keys);
 protected:
 private:
     sf::Event event;
