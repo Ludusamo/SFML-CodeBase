@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Platformer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Platformer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="../../../../../../../usr/local/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../../../usr/local/lib/libsfml-audio.so" />
+					<Add library="../../../../../../../usr/local/lib/libsfml-graphics.so" />
+					<Add library="../../../../../../../usr/local/lib/libsfml-network.so" />
+					<Add library="../../../../../../../usr/local/lib/libsfml-system.so" />
+					<Add library="../../../../../../../usr/local/lib/libsfml-window.so" />
+					<Add directory="../../../../../../../usr/local/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Platformer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/FadeTransition.h" />
+		<Unit filename="include/InputManager.h" />
+		<Unit filename="include/MainMenuScreen.h" />
+		<Unit filename="include/Screen.h" />
+		<Unit filename="include/ScreenManager.h" />
+		<Unit filename="include/SplashScreen.h" />
+		<Unit filename="include/Transition.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/FadeTransition.cpp" />
+		<Unit filename="src/InputManager.cpp" />
+		<Unit filename="src/MainMenuScreen.cpp" />
+		<Unit filename="src/Screen.cpp" />
+		<Unit filename="src/ScreenManager.cpp" />
+		<Unit filename="src/SplashScreen.cpp" />
+		<Unit filename="src/Transition.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
