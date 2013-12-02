@@ -4,8 +4,6 @@
 #include <SFML/System.hpp>
 #include "ScreenManager.h"
 
-// Testing testing testing
-
 int main() {
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT, 32), "SFML Platformer");
 
