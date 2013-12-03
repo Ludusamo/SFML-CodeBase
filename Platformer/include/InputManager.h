@@ -9,7 +9,6 @@ public:
     InputManager();
     ~InputManager();
 
-    void update(sf::Event event);
     bool keyPressed(sf::Keyboard::Key key);
     bool keyPressed(std::vector<sf::Keyboard::Key> keys);
 protected:

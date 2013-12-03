@@ -5,11 +5,18 @@
 #include "ScreenManager.h"
 
 int main() {
+    // Window
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT, 32), "SFML Platformer");
 
+    // Window Manager
     ScreenManager::getInstance().initialize();
     ScreenManager::getInstance().loadContent();
 
+    // Timing
+    sf::Clock clock;
+    float delta;
+
+    // Main Game Loop
     while (window.isOpen()) {
         sf::Event event;
 
@@ -18,11 +25,18 @@ int main() {
                 window.close();
         }
 
+        // Resets the Window
         window.clear();
 
-        ScreenManager::getInstance().update(window, event);
+        // Timing
+        delta = clock.restart().asSeconds();
+        std::cout << delta << std::endl;
+
+        // Update and Render Cycles
+        ScreenManager::getInstance().update(window, delta);
         ScreenManager::getInstance().render(window);
 
+        // Just Displays the Screen
         window.display();
     }
 

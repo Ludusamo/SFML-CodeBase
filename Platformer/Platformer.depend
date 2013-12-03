@@ -432,24 +432,24 @@
 	<iostream>
 	<sstream>
 
-1386024087 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
+1386028768 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
 	<iostream>
 	"MainMenuScreen.h"
 
-1386016745 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
+1386028824 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	<SFML/Graphics.hpp>
 
-1386024386 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Screen.h
+1386028784 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Screen.h
 	"SFML/Graphics.hpp"
 	"InputManager.h"
 
-1386024351 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/InputManager.h
+1386028752 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/InputManager.h
 	<vector>
 	<SFML/Graphics.hpp>
 
-1386016745 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
+1386028868 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
 	<SFML/Graphics.hpp>
 	"Screen.h"
 	"MainMenuScreen.h"
@@ -457,15 +457,15 @@
 	"FadeTransition.h"
 	"FileManager.h"
 
-1386016745 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
+1386028801 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	<SFML/Graphics.hpp>
 
-1386016745 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Screen.cpp
+1386028791 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Screen.cpp
 	"Screen.h"
 
-1386023993 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
+1386028325 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
 	"ScreenManager.h"
 
 1386024033 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
@@ -475,13 +475,13 @@
 1386016745 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Transition.cpp
 	"Transition.h"
 
-1386023401 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
+1386028876 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	"ScreenManager.h"
 
-1386024353 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
+1386028743 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
 	"InputManager.h"
 

@@ -16,7 +16,7 @@ void Screen::unloadContent() {
     keys.clear();
 }
 
-void Screen::update(sf::Event event) {
+void Screen::update(float delta) {
 
 }
 

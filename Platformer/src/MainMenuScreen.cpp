@@ -23,9 +23,7 @@ void MainMenuScreen::unloadContent() {
     Screen::unloadContent();
 }
 
-void MainMenuScreen::update(sf::Event event) {
-    input.update(event);
-
+void MainMenuScreen::update(float delta) {
     if (input.keyPressed(keys))
         ScreenManager::getInstance().addScreen(new SplashScreen);
 }

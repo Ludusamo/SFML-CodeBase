@@ -8,10 +8,6 @@ InputManager::~InputManager() {
     //dtor
 }
 
-void InputManager::update(sf::Event event) {
-    this->event = event;
-}
-
 bool InputManager::keyPressed(sf::Keyboard::Key key) {
     if (sf::Keyboard::isKeyPressed(key))
         return true;

@@ -2,6 +2,14 @@
 
 Screen *currentScreen, *newScreen;
 
+ScreenManager::ScreenManager() {
+    //ctor
+}
+
+ScreenManager::~ScreenManager() {
+    //dtor
+}
+
 ScreenManager &ScreenManager::getInstance() {
     static ScreenManager instance;
     return instance;
@@ -51,8 +59,8 @@ void ScreenManager::switchScreen() {
     currentScreen->loadContent();
 }
 
-void ScreenManager::update(sf::RenderWindow &window, sf::Event event) {
-    if (!transition) currentScreen->update(event);
+void ScreenManager::update(sf::RenderWindow &window, float delta) {
+    if (!transition) currentScreen->update(delta);
     else Transition(window);
 }
 
