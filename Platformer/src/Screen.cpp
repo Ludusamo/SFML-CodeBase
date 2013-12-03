@@ -24,6 +24,3 @@ void Screen::render(sf::RenderWindow &window) {
 
 }
 
-bool Screen::isLoaded() {
-    return loaded;
-}

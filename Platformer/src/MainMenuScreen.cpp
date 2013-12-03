@@ -15,7 +15,6 @@ void MainMenuScreen::loadContent() {
 
     text.setFont(font);
     text.setString("MainMenuScreen");
-    loaded = true;
 }
 
 void MainMenuScreen::unloadContent() {

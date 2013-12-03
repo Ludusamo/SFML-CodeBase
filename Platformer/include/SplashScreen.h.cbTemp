@@ -21,7 +21,6 @@ private:
     sf::Texture logoT;
     sf::Sprite logo;
     sf::Clock clock;
-    float delta;
 };
 
 #endif // SPLASHSCREEN_H

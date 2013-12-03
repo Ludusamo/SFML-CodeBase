@@ -12,11 +12,8 @@ public:
     virtual void unloadContent();
     virtual void update();
     virtual void render(sf::RenderWindow &window);
-
-    bool isLoaded();
 protected:
     InputManager input;
-    bool loaded = false;
 private:
 };
 

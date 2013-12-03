@@ -43,6 +43,7 @@ void ScreenManager::initialize() {
 
 void ScreenManager::loadContent() {
     currentScreen->loadContent();
+
     sf::Texture tex;
     sf::Vector2f pos;
     fade.loadContent("", tex, pos);

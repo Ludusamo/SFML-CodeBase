@@ -21,7 +21,6 @@ void SplashScreen::unloadContent() {
 }
 
 void SplashScreen::update() {
-    delta += clock.restart();
     ScreenManager::getInstance().addScreen(new MainMenuScreen);
 }
 
