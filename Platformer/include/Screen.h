@@ -10,11 +10,13 @@ public:
 
     virtual void loadContent();
     virtual void unloadContent();
-    virtual void update(float delta);
+    virtual void update();
     virtual void render(sf::RenderWindow &window);
+
+    bool isLoaded();
 protected:
     InputManager input;
-    std::vector<sf::Keyboard::Key> keys;
+    bool loaded = false;
 private:
 };
 

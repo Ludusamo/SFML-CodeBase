@@ -3,6 +3,7 @@
 
 #include "Screen.h"
 #include "ScreenManager.h"
+#include "MainMenuScreen.h"
 #include <SFML/Graphics.hpp>
 
 class SplashScreen : public Screen {
@@ -12,12 +13,11 @@ public:
 
     void loadContent();
     void unloadContent();
-    void update(float delta);
+    void update();
     void render(sf::RenderWindow &window);
 protected:
 private:
-    sf::Text text;
-    sf::Font font;
+    Screen newScreen;
 };
 
 #endif // SPLASHSCREEN_H

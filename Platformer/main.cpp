@@ -15,6 +15,7 @@ int main() {
     // Timing
     sf::Clock clock;
     float delta;
+    const int ups = 60; // Updates Per Second
 
     // Main Game Loop
     while (window.isOpen()) {
@@ -29,12 +30,14 @@ int main() {
         window.clear();
 
         // Timing
-        delta = clock.restart().asSeconds();
-        std::cout << delta << std::endl;
+        delta += clock.restart().asSeconds();
 
-        // Update and Render Cycles
-        ScreenManager::getInstance().update(window, delta);
-        ScreenManager::getInstance().render(window);
+        // Update and Render Cycles: CURRENTLY LIMITED AT 60 UPS
+        if (delta >= 1 / ups) {
+            ScreenManager::getInstance().update(window);
+            ScreenManager::getInstance().render(window);
+            delta = 0;
+        }
 
         // Just Displays the Screen
         window.display();

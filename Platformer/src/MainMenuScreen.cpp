@@ -10,22 +10,20 @@ MainMenuScreen::~MainMenuScreen() {
 }
 
 void MainMenuScreen::loadContent() {
-    if (!font.loadFromFile("Zenzai Itachi.ttf"))
+    if (!font.loadFromFile("res/fonts/Zenzai Itachi.ttf"))
         std::cout << "Could Not Find Specified Font." << std::endl;
 
     text.setFont(font);
     text.setString("MainMenuScreen");
-    keys.push_back(sf::Keyboard::Z);
-    keys.push_back(sf::Keyboard::Return);
+    loaded = true;
 }
 
 void MainMenuScreen::unloadContent() {
     Screen::unloadContent();
 }
 
-void MainMenuScreen::update(float delta) {
-    if (input.keyPressed(keys))
-        ScreenManager::getInstance().addScreen(new SplashScreen);
+void MainMenuScreen::update() {
+
 }
 
 void MainMenuScreen::render(sf::RenderWindow &window) {

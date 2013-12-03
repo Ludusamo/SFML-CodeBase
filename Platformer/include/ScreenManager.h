@@ -19,7 +19,7 @@ public:
     void initialize();
     void loadContent();
     void switchScreen();
-    void update(sf::RenderWindow &window, float delta);
+    void update(sf::RenderWindow &window);
     void render(sf::RenderWindow &window);
 
     void addScreen(Screen *screen);

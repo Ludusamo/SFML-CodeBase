@@ -432,16 +432,16 @@
 	<iostream>
 	<sstream>
 
-1386028768 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
+1386030771 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
 	<iostream>
 	"MainMenuScreen.h"
 
-1386028824 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
+1386030142 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	<SFML/Graphics.hpp>
 
-1386028784 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Screen.h
+1386030815 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Screen.h
 	"SFML/Graphics.hpp"
 	"InputManager.h"
 
@@ -449,7 +449,7 @@
 	<vector>
 	<SFML/Graphics.hpp>
 
-1386028868 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
+1386030171 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
 	<SFML/Graphics.hpp>
 	"Screen.h"
 	"MainMenuScreen.h"
@@ -457,25 +457,26 @@
 	"FadeTransition.h"
 	"FileManager.h"
 
-1386028801 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
+1386031076 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
 	"Screen.h"
 	"ScreenManager.h"
+	"MainMenuScreen.h"
 	<SFML/Graphics.hpp>
 
-1386028791 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Screen.cpp
+1386030828 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Screen.cpp
 	"Screen.h"
 
-1386028325 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
+1386030192 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
 	"ScreenManager.h"
 
-1386024033 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
+1386028810 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
 	<iostream>
 	"SplashScreen.h"
 
 1386016745 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Transition.cpp
 	"Transition.h"
 
-1386028876 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
+1386030269 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
