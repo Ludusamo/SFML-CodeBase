@@ -5,18 +5,17 @@
 #include "ScreenManager.h"
 #include <SFML/Graphics.hpp>
 
-class GameScreen : public Screen
-{
-    public:
-        GameScreen();
-        ~GameScreen();
+class GameScreen : public Screen {
+public:
+    GameScreen();
+    ~GameScreen();
 
-        void loadContent();
-        void unloadContent();
-        void update();
-        void render(sf::RenderWindow &window);
-    protected:
-    private:
+    void loadContent();
+    void unloadContent();
+    void update();
+    void render(sf::RenderWindow &window);
+protected:
+private:
     sf::Text text;
     sf::Font font;
 };

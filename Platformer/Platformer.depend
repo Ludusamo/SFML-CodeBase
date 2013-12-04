@@ -487,11 +487,17 @@
 1386028743 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
 	"InputManager.h"
 
-1386121935 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
+1386121891 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	<SFML/Graphics.hpp>
 
-1386122121 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+1386123427 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
 	"GameScreen.h"
+
+1386123427 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
+	"Entity.h"
+
+1386123427 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Entity.h
+	<SFML/Graphics.hpp>
 

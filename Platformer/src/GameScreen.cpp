@@ -1,12 +1,10 @@
 #include "GameScreen.h"
 
-GameScreen::GameScreen()
-{
+GameScreen::GameScreen() {
     //ctor
 }
 
-GameScreen::~GameScreen()
-{
+GameScreen::~GameScreen() {
     //dtor
 }
 
