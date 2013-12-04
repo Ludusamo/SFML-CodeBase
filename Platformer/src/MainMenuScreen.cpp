@@ -15,6 +15,9 @@ void MainMenuScreen::loadContent() {
 
     text.setFont(font);
     text.setString("MainMenuScreen");
+
+    confirm.push_back(sf::Keyboard::Return);
+    confirm.push_back(sf::Keyboard::Space);
 }
 
 void MainMenuScreen::unloadContent() {
@@ -22,7 +25,8 @@ void MainMenuScreen::unloadContent() {
 }
 
 void MainMenuScreen::update() {
-
+    if (input.keyPressed(confirm))
+        ScreenManager::getInstance().addScreen(new GameScreen);
 }
 
 void MainMenuScreen::render(sf::RenderWindow &window) {

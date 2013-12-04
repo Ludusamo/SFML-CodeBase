@@ -21,8 +21,9 @@ void SplashScreen::unloadContent() {
 }
 
 void SplashScreen::update() {
-    delta += clock.restart();
-    ScreenManager::getInstance().addScreen(new MainMenuScreen);
+    delta += clock.restart().asSeconds();
+    if (delta >= 2)
+        ScreenManager::getInstance().addScreen(new MainMenuScreen);
 }
 
 void SplashScreen::render(sf::RenderWindow &window) {

@@ -432,11 +432,11 @@
 	<iostream>
 	<sstream>
 
-1386085626 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
+1386122170 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
 	<iostream>
 	"MainMenuScreen.h"
 
-1386030142 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
+1386121308 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	<SFML/Graphics.hpp>
@@ -449,15 +449,16 @@
 	<vector>
 	<SFML/Graphics.hpp>
 
-1386030171 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
+1386122188 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
 	<SFML/Graphics.hpp>
 	"Screen.h"
 	"MainMenuScreen.h"
 	"SplashScreen.h"
+	"GameScreen.h"
 	"FadeTransition.h"
 	"FileManager.h"
 
-1386085820 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
+1386086640 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	"MainMenuScreen.h"
@@ -469,7 +470,7 @@
 1386085450 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
 	"ScreenManager.h"
 
-1386085604 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
+1386121139 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
 	<iostream>
 	"SplashScreen.h"
 
@@ -485,4 +486,12 @@
 
 1386028743 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
 	"InputManager.h"
+
+1386121935 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
+	"Screen.h"
+	"ScreenManager.h"
+	<SFML/Graphics.hpp>
+
+1386122121 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+	"GameScreen.h"
 

@@ -5,6 +5,7 @@
 #include "Screen.h"
 #include "MainMenuScreen.h"
 #include "SplashScreen.h"
+#include "GameScreen.h"
 #include "FadeTransition.h"
 #include "FileManager.h"
 

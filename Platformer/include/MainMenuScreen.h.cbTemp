@@ -18,7 +18,7 @@ protected:
 private:
     sf::Text text;
     sf::Font font;
-    std::vector<sf::Keyboard::Key> confirm;
+    std::vector
 };
 
 #endif // MAINMENUSCREEN_H
