@@ -44,7 +44,6 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Input" />
-		<Unit filename="include/Assets.h" />
 		<Unit filename="include/Entity.h" />
 		<Unit filename="include/FadeTransition.h" />
 		<Unit filename="include/FileManager.h" />
@@ -56,9 +55,9 @@
 		<Unit filename="include/ScreenManager.h" />
 		<Unit filename="include/SplashScreen.h" />
 		<Unit filename="include/Tile.h" />
+		<Unit filename="include/Tilemap.h" />
 		<Unit filename="include/Transition.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Assets.cpp" />
 		<Unit filename="src/Entity.cpp" />
 		<Unit filename="src/FadeTransition.cpp" />
 		<Unit filename="src/FileManager.cpp" />
@@ -70,6 +69,7 @@
 		<Unit filename="src/ScreenManager.cpp" />
 		<Unit filename="src/SplashScreen.cpp" />
 		<Unit filename="src/Tile.cpp" />
+		<Unit filename="src/Tilemap.cpp" />
 		<Unit filename="src/Transition.cpp" />
 		<Extensions>
 			<code_completion />
