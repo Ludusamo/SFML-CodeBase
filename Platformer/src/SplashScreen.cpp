@@ -12,6 +12,7 @@ SplashScreen::~SplashScreen() {
 void SplashScreen::loadContent() {
     if (!logoT.loadFromFile("res/imgs/LogoV1.png", sf::IntRect(0, 0, 500, 500)))
         std::cout << "Unable to load logo." << std::endl;
+    logoT.setSmooth(true);
     logo.setTexture(logoT);
     logo.setPosition(sf::Vector2f((WIDTH / 2) - (250), (HEIGHT / 2) - (250)));
 }

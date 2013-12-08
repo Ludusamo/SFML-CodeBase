@@ -3,17 +3,28 @@
 
 #include <SFML/Graphics.hpp>
 
-class Entity {
+#define FRICTION 0.9
+
+class Entity : public sf::Drawable, public sf::Transformable {
 public:
     Entity();
     ~Entity();
 
+    virtual void load(sf::Texture &texture);
+    virtual void unload();
     virtual void update();
-    virtual void render(sf::Window &window);
 protected:
-    sf::Vector2f pos;
-    sf::Sprite sprite;
+    sf::VertexArray vertices;
+    sf::Texture tex;
+    sf::FloatRect bounds;
+
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const {
+        states.transform *= getTransform();
+        states.texture = &tex;
+        target.draw(vertices, states);
+    }
 private:
+
 };
 
 #endif // ENTITY_H

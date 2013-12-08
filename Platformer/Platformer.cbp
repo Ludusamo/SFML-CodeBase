@@ -51,13 +51,15 @@
 		<Unit filename="include/InputManager.h" />
 		<Unit filename="include/Level.h" />
 		<Unit filename="include/MainMenuScreen.h" />
+		<Unit filename="include/Mob.h" />
+		<Unit filename="include/Player.h" />
 		<Unit filename="include/Screen.h" />
 		<Unit filename="include/ScreenManager.h" />
 		<Unit filename="include/SplashScreen.h" />
-		<Unit filename="include/Tile.h" />
 		<Unit filename="include/Tilemap.h" />
 		<Unit filename="include/Transition.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="res/lvls/test.lvl" />
 		<Unit filename="src/Entity.cpp" />
 		<Unit filename="src/FadeTransition.cpp" />
 		<Unit filename="src/FileManager.cpp" />
@@ -65,10 +67,11 @@
 		<Unit filename="src/InputManager.cpp" />
 		<Unit filename="src/Level.cpp" />
 		<Unit filename="src/MainMenuScreen.cpp" />
+		<Unit filename="src/Mob.cpp" />
+		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Screen.cpp" />
 		<Unit filename="src/ScreenManager.cpp" />
 		<Unit filename="src/SplashScreen.cpp" />
-		<Unit filename="src/Tile.cpp" />
 		<Unit filename="src/Tilemap.cpp" />
 		<Unit filename="src/Transition.cpp" />
 		<Extensions>

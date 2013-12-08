@@ -35,7 +35,6 @@ bool Tilemap::load(const std::string& tilesetFile, sf::Vector2u tileSize, const 
             quad[3].texCoords = sf::Vector2f(xx * tileSize.x, (yy + 1) * tileSize.y);
         }
     }
-    std::cout << "Map Loaded" << std::endl;
     return true;
 }
 

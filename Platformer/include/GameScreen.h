@@ -17,9 +17,11 @@ public:
     void render(sf::RenderWindow &window);
 protected:
 private:
-    sf::Text text;
-    sf::Font font;
     Level level;
+    std::vector<sf::Keyboard::Key> up;
+    std::vector<sf::Keyboard::Key> down;
+    std::vector<sf::Keyboard::Key> left;
+    std::vector<sf::Keyboard::Key> right;
 };
 
 #endif // GAMESCREEN_H

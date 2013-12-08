@@ -43,9 +43,6 @@ void FileManager::loadContent(const char* filename, std::vector<std::vector<std:
                         tempAttributes.push_back(line);
                     else
                         tempContent.push_back(line);
-
-                    std::cout << line << std::endl;
-
                 }
             }
 

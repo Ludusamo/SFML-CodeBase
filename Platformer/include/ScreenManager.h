@@ -9,8 +9,8 @@
 #include "FadeTransition.h"
 #include "FileManager.h"
 
-#define WIDTH 800
-#define HEIGHT 600
+#define WIDTH 640
+#define HEIGHT 640
 
 class ScreenManager {
 public:
@@ -41,10 +41,6 @@ private:
     FadeTransition fade;
 
     sf::RectangleShape fadeBackground;
-
-    std::vector<std::vector<std::string>> attributes;
-    std::vector<std::vector<std::string>> content;
-    FileManager file;
 };
 
 #endif // SCREENMANAGER_H

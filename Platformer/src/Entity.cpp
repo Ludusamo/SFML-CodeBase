@@ -8,10 +8,16 @@ Entity::~Entity() {
     //dtor
 }
 
-void Entity::update() {
-
+void Entity::load(sf::Texture &texture) {
+    vertices.setPrimitiveType(sf::Quads);
+    vertices.resize(4);
+    tex = texture;
 }
 
-void Entity::render(sf::Window &window) {
+void Entity::unload() {
+    vertices.clear();
+}
+
+void Entity::update() {
 
 }

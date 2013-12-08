@@ -421,7 +421,7 @@
 	<SFML/Graphics.hpp>
 	<string>
 
-1386016745 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/FileManager.cpp
+1386432919 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/FileManager.cpp
 	"FileManager.h"
 
 1386016745 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/FileManager.h
@@ -432,7 +432,7 @@
 	<iostream>
 	<sstream>
 
-1386371905 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
+1386459619 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
 	<iostream>
 	"MainMenuScreen.h"
 
@@ -449,7 +449,7 @@
 	<vector>
 	<SFML/Graphics.hpp>
 
-1386122188 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
+1386434252 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
 	<SFML/Graphics.hpp>
 	"Screen.h"
 	"MainMenuScreen.h"
@@ -467,10 +467,10 @@
 1386085588 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Screen.cpp
 	"Screen.h"
 
-1386085450 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
+1386457509 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
 	"ScreenManager.h"
 
-1386121139 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
+1386446726 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
 	<iostream>
 	"SplashScreen.h"
 
@@ -487,28 +487,29 @@
 1386028743 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
 	"InputManager.h"
 
-1386350067 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
+1386461282 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	"Level.h"
 	<SFML/Graphics.hpp>
 
-1386369522 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+1386462206 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
 	"GameScreen.h"
 
-1386123539 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
+1386459275 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
 	"Entity.h"
 
-1386123570 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Entity.h
+1386442711 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Entity.h
 	<SFML/Graphics.hpp>
 
-1386371995 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
+1386462468 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
 	"Level.h"
 
-1386371955 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
+1386462462 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
 	<string>
 	<SFML/Graphics.hpp>
 	<Tilemap.h>
+	<Player.h>
 	<vector>
 	<fstream>
 	<iostream>
@@ -531,11 +532,25 @@
 1386208265 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Assets.h
 	<SFML/Graphics.hpp>
 
-1386372157 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Tilemap.cpp
+1386438206 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Tilemap.cpp
 	"Tilemap.h"
 
 1386372175 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Tilemap.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<iostream>
+
+1386462070 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Mob.cpp
+	"Mob.h"
+
+1386462055 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Mob.h
+	<SFML/Graphics.hpp>
+	<Entity.h>
+
+1386459334 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Player.h
+	<SFML/Graphics.hpp>
+	<Mob.h>
+
+1386462350 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Player.cpp
+	"Player.h"
 

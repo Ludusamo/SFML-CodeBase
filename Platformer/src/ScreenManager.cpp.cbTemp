@@ -54,7 +54,7 @@ void ScreenManager::loadContent() {
 
 void ScreenManager::switchScreen() {
     currentScreen->unloadContent();
-    delete currentScreen;
+    currentScreen.
     currentScreen = newScreen;
     currentScreen->loadContent();
 }
