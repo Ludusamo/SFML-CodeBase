@@ -27,6 +27,8 @@ void GameScreen::unloadContent() {
 
 void GameScreen::update() {
     level.update();
+
+    // Player movements
     if (input.keyPressed(up)) level.getPlayer().setAccelerationY(-2);
     else if (input.keyPressed(down)) level.getPlayer().setAccelerationY(2);
     else level.getPlayer().setAccelerationY(0);
@@ -38,4 +40,8 @@ void GameScreen::update() {
 
 void GameScreen::render(sf::RenderWindow &window) {
     level.render(window);
+    mainView = window.getDefaultView();
+    mainView.setCenter(level.getPlayer().getPosition().x, level.getPlayer().getPosition().y);
+    mainView.zoom(1 / SCALE);
+    window.setView(mainView);
 }

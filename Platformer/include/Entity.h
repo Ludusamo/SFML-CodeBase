@@ -16,7 +16,6 @@ public:
 protected:
     sf::VertexArray vertices;
     sf::Texture tex;
-    sf::FloatRect bounds;
 
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const {
         states.transform *= getTransform();

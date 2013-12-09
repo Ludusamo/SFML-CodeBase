@@ -11,7 +11,7 @@ public:
     Player();
     ~Player();
 
-    void load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL);
+    void load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vector2i mSize);
     void unload();
 protected:
 private:

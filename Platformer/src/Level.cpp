@@ -11,20 +11,35 @@ Level::~Level() {
 void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) {
     std::ifstream in(file);
     in >> width >> height;
+
+    // Loading Map
     int buffer;
     for (int i = 0; i < width * height; i++) {
         in >> buffer;
         tiles.push_back(buffer);
     }
+
+    // Loading Collision Map
+    std::vector<int> bufferV;
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            in >> buffer;
+            bufferV.push_back(buffer);
+        }
+        colMap.push_back(bufferV);
+        bufferV.clear();
+    }
     in.close();
+
+    for (int y = 0; y < height; y++)
+        for (int x = 0; x < width; x++)
+            std::cout << colMap[y][x] << std::endl;
 
     if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
         std::cout << "Map could not be loaded." << std::endl;
-    tmap.setScale(SCALE, SCALE);
 
     pTex.loadFromFile("res/imgs/player.png");
-    player.load(sf::Vector2f(100, 100), pTex, 2);
-    player.setScale(SCALE, SCALE);
+    player.load(sf::Vector2f(100, 100), pTex, 2, sf::Vector2i(16, 16));
 }
 
 void Level::generateLevel() {
@@ -37,7 +52,7 @@ void Level::unload() {
 }
 
 void Level::update() {
-    player.moveM();
+    player.update(colMap);
 }
 
 void Level::render(sf::RenderWindow &window) {
@@ -49,3 +64,6 @@ Player &Level::getPlayer() {
     return player;
 }
 
+std::vector<std::vector<int>> Level::getColMap() {
+    return colMap;
+}

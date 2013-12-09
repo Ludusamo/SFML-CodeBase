@@ -22,12 +22,14 @@ public:
     void update();
     void render(sf::RenderWindow &window);
     Player &getPlayer();
+    std::vector<std::vector<int>> getColMap();
 protected:
 private:
     void generateLevel();
     int width, height;
     std::vector<int> tiles;
     Tilemap tmap;
+    std::vector<std::vector<int>> colMap;
     Player player;
     sf::Texture pTex;
 };

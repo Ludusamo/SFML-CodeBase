@@ -22,6 +22,8 @@ private:
     std::vector<sf::Keyboard::Key> down;
     std::vector<sf::Keyboard::Key> left;
     std::vector<sf::Keyboard::Key> right;
+
+    sf::View mainView;
 };
 
 #endif // GAMESCREEN_H
