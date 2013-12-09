@@ -17,7 +17,7 @@ void Mob::load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vector
     vertices.resize(4);
     tex = texture;
 
-    bounds.top = getPosition().y;
+    bounds.top = getPosition().y / 32;
     bounds.left = getPosition().x;
     bounds.width = (float) (mSize.x);
     bounds.height = (float) (mSize.y);
