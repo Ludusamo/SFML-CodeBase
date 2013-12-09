@@ -19,10 +19,8 @@ void Mob::load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vector
 
     bounds.top = getPosition().y;
     bounds.left = getPosition().x;
-    bounds.width = (float) (mSize.x);
-    bounds.height = (float) (mSize.y);
-
-    std::cout << bounds.width << " " << bounds.height << std::endl;
+    bounds.width = mSize.x;
+    bounds.height = mSize.y;
 
     pos.x *= 32;
     pos.y *= 32;
@@ -41,12 +39,6 @@ void Mob::update(std::vector<std::vector<int>> colMap) {
 void Mob::moveM(std::vector<std::vector<int>> colMap) {
     velocity += acceleration;
     checkCollision(colMap);
-    velocity.x *= FRICTION;
-    velocity.y *= FRICTION;
-    if (velocity.x > MAX_VEL) velocity.x = MAX_VEL;
-    if (velocity.x < -MAX_VEL) velocity.x = -MAX_VEL;
-    if (velocity.y > MAX_VEL) velocity.y = MAX_VEL;
-    if (velocity.y < -MAX_VEL) velocity.y = -MAX_VEL;
 }
 
 void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
@@ -90,6 +82,13 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
         }
     }
     collision.top = getPosition().y;
+
+    velocity.x *= FRICTION;
+    velocity.y *= FRICTION;
+    if (velocity.x > MAX_VEL) velocity.x = MAX_VEL;
+    if (velocity.x < -MAX_VEL) velocity.x = -MAX_VEL;
+    if (velocity.y > MAX_VEL) velocity.y = MAX_VEL;
+    if (velocity.y < -MAX_VEL) velocity.y = -MAX_VEL;
 
     move(velocity);
     bounds.left = getPosition().x;

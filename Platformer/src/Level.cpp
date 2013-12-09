@@ -31,10 +31,6 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
     }
     in.close();
 
-    for (int y = 0; y < height; y++)
-        for (int x = 0; x < width; x++)
-            std::cout << colMap[y][x] << std::endl;
-
     if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
         std::cout << "Map could not be loaded." << std::endl;
 
