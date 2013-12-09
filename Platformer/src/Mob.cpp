@@ -59,6 +59,8 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
 //        std::cout << collidable[i].left << " " << bounds.left << std::endl;
 //    }
 
+    std::cout << collision.width << " " << collision.height << std::endl;
+
     collision.left += velocity.x / 32;
     for (unsigned int i = 0; i < collidable.size(); i++) {
         if (collision.top < collidable[i].top + collidable[i].height || collision.top + collision.height > collidable[i].top
@@ -82,14 +84,12 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
     collision.top += velocity.y / 32;
     for (unsigned int i = 0; i < collidable.size(); i++) {
         if (collision.top < collidable[i].top + collidable[i].height || collision.top + collision.height > collidable[i].top
-                || collision.left < collidable[i].left + collidable[i].width || collision.left + collision.width > collidable[i].left) {
+                || collision.left < collidable[i].left + collidable[i].width || collision.left + collision.width < collidable[i].left) {
             setVelocityY(0);
             break;
         }
     }
     collision.top = getPosition().y;
-
-    std::cout << velocity.x << std::endl;
 
     move(velocity);
     bounds.left = getPosition().x / 32;
@@ -105,6 +105,14 @@ void Mob::collidableTiles(std::vector<std::vector<int>> colMap, int startX, int 
             }
         }
     }
+}
+
+bool Mob::contains(sf::FloatRect x, sf::FloatRect y) {
+    if (x.top < y.top + y.height || x.top + x.height > y.top || x.left < y.left + y.width || x.left + x.width > y.left)
+        return true;
+    if (x.top > y.top + y.height || x.top + x.height < y.top || x.left > y.left + y.width || x.left + x.width < y.left)
+        return true;
+     return false;
 }
 
 void Mob::setAccelerationX(float a) {

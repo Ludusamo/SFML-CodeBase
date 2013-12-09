@@ -36,6 +36,7 @@ protected:
     int startX, endX, startY, endY;
 private:
     void collidableTiles(std::vector<std::vector<int>> colMap, int startX, int endX, int startY, int endY);
+    bool contains(sf::FloatRect x, sf::FloatRect y);
 };
 
 #endif // MOB_H
