@@ -59,16 +59,15 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
 //        std::cout << collidable[i].left << " " << bounds.left << std::endl;
 //    }
 
-    collision.left += velocity.x;
+    collision.left += velocity.x / 32;
     for (unsigned int i = 0; i < collidable.size(); i++) {
-        if (collision.top < collidable[i].top + collidable[i].height && collision.top + collision.height > collidable[i].top
-                && collision.left < collidable[i].left + collidable[i].width && collision.left + collision.width > collidable[i].left) {
+        if (collision.top < collidable[i].top + collidable[i].height || collision.top + collision.height > collidable[i].top
+                || collision.left < collidable[i].left + collidable[i].width || collision.left + collision.width > collidable[i].left) {
             setVelocityX(0);
             break;
         }
     }
     collision.left = getPosition().x;
-    std::cout << velocity.x << std::endl;
 
     // Checking y-axis
     startX = (int) bounds.left;
@@ -80,10 +79,10 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
 
     collidableTiles(colMap, startX, endX, startY, endY);
 
-    collision.top += velocity.y;
+    collision.top += velocity.y / 32;
     for (unsigned int i = 0; i < collidable.size(); i++) {
-        if (collision.top < collidable[i].top + collidable[i].height && collision.top + collision.height > collidable[i].top
-                && collision.left < collidable[i].left + collidable[i].width && collision.left + collision.width > collidable[i].left) {
+        if (collision.top < collidable[i].top + collidable[i].height || collision.top + collision.height > collidable[i].top
+                || collision.left < collidable[i].left + collidable[i].width || collision.left + collision.width > collidable[i].left) {
             setVelocityY(0);
             break;
         }
