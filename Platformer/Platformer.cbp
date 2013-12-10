@@ -44,6 +44,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Input" />
+		<Unit filename="include/Animation.h" />
 		<Unit filename="include/Entity.h" />
 		<Unit filename="include/FadeTransition.h" />
 		<Unit filename="include/FileManager.h" />
@@ -60,6 +61,7 @@
 		<Unit filename="include/Transition.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="res/lvls/test.lvl" />
+		<Unit filename="src/Animation.cpp" />
 		<Unit filename="src/Entity.cpp" />
 		<Unit filename="src/FadeTransition.cpp" />
 		<Unit filename="src/FileManager.cpp" />

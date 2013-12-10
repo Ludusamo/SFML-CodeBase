@@ -35,7 +35,7 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
         std::cout << "Map could not be loaded." << std::endl;
 
     pTex.loadFromFile("res/imgs/player.png");
-    player.load(sf::Vector2f(2, 7), pTex, 2, sf::Vector2i(16, 16));
+    player.load(sf::Vector2f(2, 7), pTex, 2, sf::Vector2i(32, 32));
 }
 
 void Level::generateLevel() {

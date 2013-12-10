@@ -19,6 +19,8 @@ void Player::load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vec
     vertices[1].texCoords = sf::Vector2f(mSize.x, 0);
     vertices[2].texCoords = sf::Vector2f(mSize.x, mSize.y);
     vertices[3].texCoords = sf::Vector2f(0, mSize.y);
+
+    animation.load(0, 0, 3, .2);
 }
 
 void Player::unload() {

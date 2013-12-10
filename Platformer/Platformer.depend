@@ -432,7 +432,7 @@
 	<iostream>
 	<sstream>
 
-1386522271 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
+1386637903 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
 	<iostream>
 	"MainMenuScreen.h"
 
@@ -477,7 +477,7 @@
 1386016745 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Transition.cpp
 	"Transition.h"
 
-1386030269 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
+1386634154 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
@@ -493,7 +493,7 @@
 	"Level.h"
 	<SFML/Graphics.hpp>
 
-1386554360 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+1386635755 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
 	"GameScreen.h"
 
 1386459275 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
@@ -502,7 +502,7 @@
 1386468344 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Entity.h
 	<SFML/Graphics.hpp>
 
-1386628490 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
+1386637863 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
 	"Level.h"
 
 1386523215 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
@@ -540,12 +540,13 @@
 	<vector>
 	<iostream>
 
-1386628591 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Mob.cpp
+1386638241 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Mob.cpp
 	"Mob.h"
 
-1386595756 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Mob.h
+1386637574 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Mob.h
 	<SFML/Graphics.hpp>
 	<Entity.h>
+	<Animation.h>
 	<iostream>
 	<math.h>
 
@@ -553,6 +554,13 @@
 	<SFML/Graphics.hpp>
 	<Mob.h>
 
-1386610115 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Player.cpp
+1386637965 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Player.cpp
 	"Player.h"
+
+1386638303 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Animation.cpp
+	"Animation.h"
+
+1386637243 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Animation.h
+	<SFML/Graphics.hpp>
+	<iostream>
 

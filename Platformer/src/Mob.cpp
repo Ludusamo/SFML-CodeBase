@@ -34,6 +34,22 @@ void Mob::unload() {
 
 void Mob::update(std::vector<std::vector<int>> colMap) {
     moveM(colMap);
+
+    if (acceleration.y < 0) {
+        animation.setModifier(UP);
+        animation.update(vertices, mSize);
+    } else if (acceleration.y > 0) {
+        animation.setModifier(DOWN);
+        animation.update(vertices, mSize);
+    }
+
+    if (acceleration.x < 0) {
+        animation.setModifier(LEFT);
+        animation.update(vertices, mSize);
+    } else if (acceleration.x > 0) {
+        animation.setModifier(RIGHT);
+        animation.update(vertices, mSize);
+    }
 }
 
 void Mob::moveM(std::vector<std::vector<int>> colMap) {
@@ -45,10 +61,8 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
     collision = bounds;
 
     // Checking x-axis
-    if (velocity.x < 0) startX = endX = (int) floor(bounds.left
-            + (velocity.x));
-    else startX = endX = (int) floor(bounds.left + bounds.width
-            + (velocity.x));
+    if (velocity.x < 0) startX = endX = (int) floor(bounds.left + (velocity.x));
+    else startX = endX = (int) floor(bounds.left + bounds.width + (velocity.x));
     startY = (int) (bounds.top);
     endY = (int) (bounds.top + bounds.height);
 
@@ -66,10 +80,8 @@ void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
     // Checking y-axis
     startX = (int) bounds.left;
     endX = (int) (bounds.left + bounds.width);
-    if (velocity.y < 0) startY = endY = (int) floor(bounds.top
-            + (velocity.y));
-    else startY = endY = (int) floor(bounds.top + bounds.height
-            + (velocity.y));
+    if (velocity.y < 0) startY = endY = (int) floor(bounds.top + (velocity.y));
+    else startY = endY = (int) floor(bounds.top + bounds.height + (velocity.y));
 
     collidableTiles(colMap, startX, endX, startY, endY);
 
@@ -106,10 +118,14 @@ void Mob::collidableTiles(std::vector<std::vector<int>> colMap, int startX, int 
     }
 }
 
+Animation &Mob::getAnimation() {
+    return animation;
+}
+
 bool Mob::contains(sf::FloatRect x, sf::FloatRect y) {
     if (x.top < y.top + y.height || x.top + x.height > y.top || x.left < y.left + y.width || x.left + x.width > y.left)
         return true;
-     return false;
+    return false;
 }
 
 void Mob::setAccelerationX(float a) {
