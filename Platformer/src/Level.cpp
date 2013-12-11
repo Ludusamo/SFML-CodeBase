@@ -9,8 +9,11 @@ Level::~Level() {
 }
 
 void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) {
-    std::ifstream in(file);
-    in >> width >> height;
+    sf::Image image;
+    if (!image.loadFromFile("res/lvls/testpng.png"))
+        std::cout << "Cannot Load Level." << std::endl;
+    width = image.getSize().x;
+    height = image.getSize().y;
 
     // Shaders
     if (shader.isAvailable())
@@ -25,23 +28,21 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
 
     // Loading Map
     int buffer;
-    for (int i = 0; i < width * height; i++) {
-        in >> buffer;
-        tiles.push_back(buffer);
-    }
-
-    // Loading Collision Map
     std::vector<int> bufferV;
     for (int y = 0; y < height; y++) {
         for (int x = 0; x < width; x++) {
-            in >> buffer;
-            bufferV.push_back(buffer);
+            for (int i = 0; i < 3; i++) {
+                if (image.getPixel(x, y) == TileData::tiles[i].getLevelColor()) {
+                    tiles.push_back(TileData::tiles[i].getId());
+                    if (TileData::tiles[i].isSolid()) bufferV.push_back(1);
+                    else bufferV.push_back(0);
+                    break;
+                }
+            }
         }
         colMap.push_back(bufferV);
         bufferV.clear();
     }
-    in.close();
-
 
     if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
         std::cout << "Map could not be loaded." << std::endl;

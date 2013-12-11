@@ -3,6 +3,7 @@
 
 #include <string>
 #include <SFML/Graphics.hpp>
+#include "TileData.h"
 #include <Tilemap.h>
 #include <Player.h>
 #include <vector>

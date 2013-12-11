@@ -9,7 +9,7 @@ GameScreen::~GameScreen() {
 }
 
 void GameScreen::loadContent() {
-    level.loadLevel("res/imgs/Tilesheet_A.png", "res/lvls/big_test.lvl");
+    level.loadLevel("res/imgs/Tilesheet_A.png", "res/lvls/testpng.png");
 
     if (level.getPlayer().getPosition().x - (WIDTH / SCALE / 2) < 0) center.x = (WIDTH / SCALE / 2);
     else if (level.getPlayer().getPosition().x + (WIDTH / SCALE / 2) > (level.getWidth() * TILE_SIZE)) center.x = (level.getWidth() * TILE_SIZE) - (WIDTH / SCALE / 2);

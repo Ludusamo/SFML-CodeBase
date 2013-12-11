@@ -477,12 +477,13 @@
 1386016745 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Transition.cpp
 	"Transition.h"
 
-1386634154 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
+1386789755 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	"ScreenManager.h"
+	"TileData.h"
 
 1386690546 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
 	"InputManager.h"
@@ -493,7 +494,7 @@
 	"Level.h"
 	<SFML/Graphics.hpp>
 
-1386729251 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+1386790396 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
 	"GameScreen.h"
 
 1386719897 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
@@ -503,12 +504,13 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1386724327 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
+1386789771 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
 	"Level.h"
 
-1386724701 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
+1386789470 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
 	<string>
 	<SFML/Graphics.hpp>
+	"TileData.h"
 	<Tilemap.h>
 	<Player.h>
 	<vector>
@@ -521,10 +523,17 @@
 1386349701 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Tile.h
 	<SFML/Graphics.hpp>
 
-1386207742 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/TileData.cpp
+1386790163 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/TileData.cpp
 	"TileData.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdbool.h>
 
-1386208227 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/TileData.h
+1386790230 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/TileData.h
+	<stdlib.h>
+	<stdint.h>
+	<stdbool.h>
+	<SFML/Graphics.hpp>
 
 1386208250 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Assets.cpp
 	"Assets.h"
@@ -564,4 +573,10 @@
 1386637243 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Animation.h
 	<SFML/Graphics.hpp>
 	<iostream>
+
+1386770645 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Light.cpp
+	"Light.h"
+
+1386781776 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Light.h
+	<Entity.h>
 
