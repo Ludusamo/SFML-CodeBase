@@ -60,6 +60,7 @@
 		<Unit filename="include/Tilemap.h" />
 		<Unit filename="include/Transition.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="res/lvls/big_test.lvl" />
 		<Unit filename="res/lvls/test.lvl" />
 		<Unit filename="res/shaders/AmbientShader.glsl" />
 		<Unit filename="res/shaders/VertexShader.glsl" />

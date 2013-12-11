@@ -91,3 +91,11 @@ Player &Level::getPlayer() {
 std::vector<std::vector<int>> Level::getColMap() {
     return colMap;
 }
+
+int Level::getWidth() {
+    return width;
+}
+
+int Level::getHeight() {
+    return height;
+}

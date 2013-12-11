@@ -9,7 +9,15 @@ GameScreen::~GameScreen() {
 }
 
 void GameScreen::loadContent() {
-    level.loadLevel("res/imgs/Tilesheet_A.png", "res/lvls/test.lvl");
+    level.loadLevel("res/imgs/Tilesheet_A.png", "res/lvls/big_test.lvl");
+
+    if (level.getPlayer().getPosition().x - (WIDTH / SCALE / 2) < 0) center.x = (WIDTH / SCALE / 2);
+    else if (level.getPlayer().getPosition().x + (WIDTH / SCALE / 2) > (level.getWidth() * TILE_SIZE)) center.x = (level.getWidth() * TILE_SIZE) - (WIDTH / SCALE / 2);
+    else center.x = level.getPlayer().getPosition().x;
+    if (level.getPlayer().getPosition().y - (HEIGHT / SCALE / 2) < 0) center.y = (HEIGHT / SCALE / 2);
+    else if (level.getPlayer().getPosition().y + (HEIGHT / SCALE / 2) > (level.getHeight() * TILE_SIZE)) center.y = (level.getHeight() * TILE_SIZE) - (WIDTH / SCALE / 2);
+    else center.y = level.getPlayer().getPosition().y;
+
     up.push_back(sf::Keyboard::Up);
     up.push_back(sf::Keyboard::W);
     down.push_back(sf::Keyboard::Down);
@@ -26,6 +34,13 @@ void GameScreen::unloadContent() {
 
 void GameScreen::update() {
     level.update();
+
+    if (level.getPlayer().getPosition().x - (WIDTH / SCALE / 2) < 0) center.x = (WIDTH / SCALE / 2);
+    else if (level.getPlayer().getPosition().x + (WIDTH / SCALE / 2) > (level.getWidth() * TILE_SIZE)) center.x = (level.getWidth() * TILE_SIZE) - (WIDTH / SCALE / 2);
+    else center.x = level.getPlayer().getPosition().x;
+    if (level.getPlayer().getPosition().y - (HEIGHT / SCALE / 2) < 0) center.y = (HEIGHT / SCALE / 2);
+    else if (level.getPlayer().getPosition().y + (HEIGHT / SCALE / 2) > (level.getHeight() * TILE_SIZE)) center.y = (level.getHeight() * TILE_SIZE) - (HEIGHT / SCALE / 2);
+    else center.y = level.getPlayer().getPosition().y;
 
     // Player movements
     if (input.keyPressed(up)) level.getPlayer().setAccelerationY(-2);
@@ -44,7 +59,7 @@ void GameScreen::update() {
 void GameScreen::render(sf::RenderWindow &window) {
     level.render(window);
     mainView = window.getDefaultView();
-    mainView.setCenter(level.getPlayer().getPosition().x, level.getPlayer().getPosition().y);
+    mainView.setCenter(center);
     mainView.zoom(1 / SCALE);
     window.setView(mainView);
 }

@@ -9,7 +9,7 @@
 #include <fstream>
 #include <iostream>
 
-#define TILE_SIZE 16
+#define TILE_SIZE 32
 #define SCALE 2.0
 
 class Level {
@@ -23,6 +23,9 @@ public:
     void render(sf::RenderWindow &window);
     Player &getPlayer();
     std::vector<std::vector<int>> getColMap();
+
+    int getWidth();
+    int getHeight();
 
     // TEMPORARY
     void switchTime(bool day);
