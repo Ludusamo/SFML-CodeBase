@@ -23,14 +23,26 @@ public:
     void render(sf::RenderWindow &window);
     Player &getPlayer();
     std::vector<std::vector<int>> getColMap();
+
+    // TEMPORARY
+    void switchTime(bool day);
 protected:
 private:
     void generateLevel();
+
+    // Map
     int width, height;
     std::vector<int> tiles;
     Tilemap tmap;
     std::vector<std::vector<int>> colMap;
+
+    // Player
     Player player;
     sf::Texture pTex;
+
+    // Shader
+    sf::Shader shader;
+    float ambientIntensity = .7f;
+    sf::Vector3f ambientColor;
 };
 #endif // LEVEL_H

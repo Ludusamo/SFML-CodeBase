@@ -484,28 +484,29 @@
 	<SFML/System.hpp>
 	"ScreenManager.h"
 
-1386028743 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
+1386690546 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
 	"InputManager.h"
 
-1386466931 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
+1386720919 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
 	"Screen.h"
 	"ScreenManager.h"
 	"Level.h"
 	<SFML/Graphics.hpp>
 
-1386635755 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+1386720511 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
 	"GameScreen.h"
 
-1386459275 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
+1386719897 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
 	"Entity.h"
 
-1386468344 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Entity.h
+1386719926 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Entity.h
 	<SFML/Graphics.hpp>
+	<iostream>
 
-1386637863 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
+1386720121 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Level.cpp
 	"Level.h"
 
-1386523215 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
+1386721010 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Level.h
 	<string>
 	<SFML/Graphics.hpp>
 	<Tilemap.h>
@@ -535,26 +536,26 @@
 1386438206 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Tilemap.cpp
 	"Tilemap.h"
 
-1386372175 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Tilemap.h
+1386719932 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Tilemap.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<iostream>
 
-1386638241 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Mob.cpp
+1386719953 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Mob.cpp
 	"Mob.h"
 
-1386637574 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Mob.h
+1386719864 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Mob.h
 	<SFML/Graphics.hpp>
 	<Entity.h>
 	<Animation.h>
 	<iostream>
 	<math.h>
 
-1386469665 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Player.h
+1386719859 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Player.h
 	<SFML/Graphics.hpp>
 	<Mob.h>
 
-1386637965 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Player.cpp
+1386719856 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Player.cpp
 	"Player.h"
 
 1386638303 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/src/Animation.cpp

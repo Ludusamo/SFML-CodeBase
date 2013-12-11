@@ -61,6 +61,8 @@
 		<Unit filename="include/Transition.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="res/lvls/test.lvl" />
+		<Unit filename="res/shaders/AmbientShader.glsl" />
+		<Unit filename="res/shaders/VertexShader.glsl" />
 		<Unit filename="src/Animation.cpp" />
 		<Unit filename="src/Entity.cpp" />
 		<Unit filename="src/FadeTransition.cpp" />

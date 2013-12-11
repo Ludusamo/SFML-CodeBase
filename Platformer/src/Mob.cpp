@@ -9,6 +9,7 @@ Mob::~Mob() {
 }
 
 void Mob::load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vector2i mSize) {
+    Entity::load(pos, texture);
     this->MAX_VEL = MAX_VEL;
     this->mSize = mSize;
     setPosition(pos);
@@ -21,11 +22,6 @@ void Mob::load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vector
     bounds.left = getPosition().x;
     bounds.width = mSize.x;
     bounds.height = mSize.y;
-
-    pos.x *= 32;
-    pos.y *= 32;
-
-    setPosition(pos);
 }
 
 void Mob::unload() {

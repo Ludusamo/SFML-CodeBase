@@ -18,7 +18,6 @@ void GameScreen::loadContent() {
     left.push_back(sf::Keyboard::A);
     right.push_back(sf::Keyboard::Right);
     right.push_back(sf::Keyboard::D);
-
 }
 
 void GameScreen::unloadContent() {
@@ -36,6 +35,10 @@ void GameScreen::update() {
     if (input.keyPressed(left)) level.getPlayer().setAccelerationX(-2);
     else if (input.keyPressed(right)) level.getPlayer().setAccelerationX(2);
     else level.getPlayer().setAccelerationX(0);
+
+    // TEMPORARY
+    if (input.keyPressed(sf::Keyboard::O)) level.switchTime(true);
+    if (input.keyPressed(sf::Keyboard::P)) level.switchTime(false);
 }
 
 void GameScreen::render(sf::RenderWindow &window) {

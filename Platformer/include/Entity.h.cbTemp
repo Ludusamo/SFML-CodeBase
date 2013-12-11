@@ -18,9 +18,12 @@ protected:
     sf::VertexArray vertices;
     sf::Texture tex;
 
+    sf::Shader shader;
+
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const {
         states.transform *= getTransform();
         states.texture = &tex;
+        states.shader = &shader;
         target.draw(vertices, states);
     }
 private:
