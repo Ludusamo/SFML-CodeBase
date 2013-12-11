@@ -1,6 +1,7 @@
 #ifndef LIGHT_H
 #define LIGHT_H
 
+#include <Entity.h>
 
 class Light : public Entity
 {

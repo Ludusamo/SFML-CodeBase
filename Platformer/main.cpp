@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include "ScreenManager.h"
+#include "TileData.h"
 
 int main() {
     // Window
