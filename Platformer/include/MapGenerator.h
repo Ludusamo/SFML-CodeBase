@@ -31,8 +31,8 @@ private:
         void populate(std::string id, std::vector<std::vector<int16_t> > componentMap);
         void populate(const MapGenerator::Component other);
         MapGenerator::Component& operator=(const MapGenerator::Component other);
-        void paint_to(std::vector<std::vector<int16_t> > &generation);
-        void paint_to(uint32_t xpos, uint32_t ypos, std::vector<std::vector<int16_t> > &generation);
+        void paint_to(std::vector<std::vector<int16_t> > &generation, bool walls);
+        void paint_to(uint32_t xpos, uint32_t ypos, std::vector<std::vector<int16_t> > &generation, bool walls);
     };
 
     bool walls;

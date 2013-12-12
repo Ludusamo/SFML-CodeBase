@@ -82,14 +82,17 @@ MapGenerator::Component& MapGenerator::Component::operator=(const MapGenerator::
     return *this;
 }
 
-void MapGenerator::Component::paint_to(std::vector<std::vector<int16_t> > &generation) {
+void MapGenerator::Component::paint_to(std::vector<std::vector<int16_t> > &generation, bool walls) {
+    uint8_t diff = walls ? 1 : 0;
     uint32_t xpos = std::rand() % generation.size();
+    xpos = xpos == 0 ? 1 : xpos;
     uint32_t ypos = std::rand() % generation[0].size();
+    ypos = ypos == 0 ? 1 : ypos;
     for(uint32_t x = xpos; x < xpos + this->componentMap.size(); x++) {
-        if(x >= generation.size())
+        if(x >= generation.size() - diff)
             break;
         for(uint32_t y = ypos; y < ypos + this->componentMap[0].size(); y++) {
-            if(y >= generation[0].size())
+            if(y >= generation[0].size() - diff)
                 break;
             if(this->componentMap[x - xpos][y - ypos] != -1)
                 generation[x][y] = this->componentMap[x - xpos][y - ypos];
@@ -97,7 +100,7 @@ void MapGenerator::Component::paint_to(std::vector<std::vector<int16_t> > &gener
     }
 }
 
-void MapGenerator::Component::paint_to(uint32_t xpos, uint32_t ypos, std::vector<std::vector<int16_t> > &generation) {
+void MapGenerator::Component::paint_to(uint32_t xpos, uint32_t ypos, std::vector<std::vector<int16_t> > &generation, bool walls) {
     for(uint32_t x = xpos; x < generation.size(); x++) {
         for(uint32_t y = ypos; y < generation[0].size(); y++) {
             if(this->componentMap[x][y] == -1)
@@ -172,7 +175,7 @@ std::vector<std::vector<int16_t> > MapGenerator::generate(uint32_t width, uint32
         this->generation.push_back(std::vector<int16_t>(height, 1));
     while((float) this->get_solids() / (width * height) > weight) {
         uint32_t index = std::rand() % resources.size();
-        this->resources[index].paint_to(this->generation);
+        this->resources[index].paint_to(this->generation, this->walls);
     }
     return this->generation;
 }

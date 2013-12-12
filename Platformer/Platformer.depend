@@ -603,3 +603,181 @@
 1386806167 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Platformer/include/Light.h
 	<Entity.h>
 
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Animation.cpp
+	"Animation.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Animation.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Entity.cpp
+	"Entity.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Entity.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/FadeTransition.cpp
+	"FadeTransition.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/FadeTransition.h
+	"Transition.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Transition.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/FileManager.cpp
+	"FileManager.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/FileManager.h
+	<vector>
+	<string>
+	<fstream>
+	<algorithm>
+	<iostream>
+	<sstream>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/GameScreen.cpp
+	"GameScreen.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/GameScreen.h
+	"Screen.h"
+	"ScreenManager.h"
+	"Level.h"
+	<SFML/Graphics.hpp>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Screen.h
+	"SFML/Graphics.hpp"
+	"InputManager.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/InputManager.h
+	<vector>
+	<SFML/Graphics.hpp>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/ScreenManager.h
+	<SFML/Graphics.hpp>
+	"Screen.h"
+	"MainMenuScreen.h"
+	"SplashScreen.h"
+	"GameScreen.h"
+	"FadeTransition.h"
+	"FileManager.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/MainMenuScreen.h
+	"Screen.h"
+	"ScreenManager.h"
+	<SFML/Graphics.hpp>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/SplashScreen.h
+	"Screen.h"
+	"ScreenManager.h"
+	"MainMenuScreen.h"
+	<SFML/Graphics.hpp>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Level.h
+	<string>
+	<SFML/Graphics.hpp>
+	"TileData.h"
+	<Tilemap.h>
+	<Player.h>
+	<vector>
+	<fstream>
+	<iostream>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/TileData.h
+	<stdlib.h>
+	<stdint.h>
+	<stdbool.h>
+	<SFML/Graphics.hpp>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Tilemap.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Player.h
+	<SFML/Graphics.hpp>
+	<Mob.h>
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Mob.h
+	<SFML/Graphics.hpp>
+	<Entity.h>
+	<Animation.h>
+	<iostream>
+	<math.h>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/InputManager.cpp
+	"InputManager.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Level.cpp
+	"Level.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Light.cpp
+	"Light.h"
+
+1386820352 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/Light.h
+	<Entity.h>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/MainMenuScreen.cpp
+	<iostream>
+	"MainMenuScreen.h"
+
+1386820459 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/MapGenerator.cpp
+	"MapGenerator.h"
+	<iostream>
+	<stdlib.h>
+	<stdint.h>
+	<string>
+	<vector>
+	<utility>
+	<fstream>
+	<assert.h>
+
+1386821296 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/MapGenerator.h
+	<iostream>
+	<stdlib.h>
+	<stdint.h>
+	<string>
+	<vector>
+	<utility>
+	<fstream>
+	<assert.h>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Mob.cpp
+	"Mob.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Player.cpp
+	"Player.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Screen.cpp
+	"Screen.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/ScreenManager.cpp
+	"ScreenManager.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/SplashScreen.cpp
+	<iostream>
+	"SplashScreen.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/TileData.cpp
+	"TileData.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdbool.h>
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Tilemap.cpp
+	"Tilemap.h"
+
+1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Transition.cpp
+	"Transition.h"
+
+1386821246 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	"ScreenManager.h"
+	"TileData.h"
+	"MapGenerator.h"
+

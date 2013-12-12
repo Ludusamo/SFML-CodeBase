@@ -4,13 +4,10 @@
 #include <SFML/System.hpp>
 #include "ScreenManager.h"
 #include "TileData.h"
-<<<<<<< HEAD
 #include "MapGenerator.h"
-=======
->>>>>>> upstream/master
 
 int main() {
-    MapGenerator test("res/lvls/1.comp");
+    MapGenerator test("res/lvls/2.comp");
     std::vector<std::vector<int16_t> > testvec = test.generate(10,10, 0.5f);
     for(int i = 0; i < testvec.size(); i++) {
         for(int j = 0; j < testvec[0].size(); j++)
