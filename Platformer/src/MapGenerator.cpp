@@ -1,11 +1,9 @@
 #include "MapGenerator.h"
 
-#include <iostream>
 #include <stdlib.h>
 #include <stdint.h>
 #include <string>
 #include <vector>
-#include <utility>
 #include <fstream>
 #include <assert.h>
 
