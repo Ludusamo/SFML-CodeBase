@@ -1,12 +1,10 @@
 #ifndef MAPGENERATOR_H
 #define MAPGENERATOR_H
 
-#include <iostream>
 #include <stdlib.h>
 #include <stdint.h>
 #include <string>
 #include <vector>
-#include <utility>
 #include <fstream>
 #include <assert.h>
 
