@@ -1,0 +1,22 @@
+#ifndef ASSETS_H
+#define ASSETS_H
+
+#include "TileData.h"
+#include <SFML/Graphics.hpp>
+
+class Assets
+{
+    public:
+        Assets();
+        ~Assets();
+
+        static TileData tiles[256];
+        static sf::Texture TilesetA;
+
+        void load();
+        void unload();
+    protected:
+    private:
+};
+
+#endif // ASSETS_H
