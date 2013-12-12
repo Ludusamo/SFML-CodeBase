@@ -30,7 +30,7 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
     std::vector<int> bufferV;
     for (int y = 0; y < height; y++) {
         for (int x = 0; x < width; x++) {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 256; i++) {
                 if (image.getPixel(x, y) == TileData::tiles[i].getLevelColor()) {
                     tiles.push_back(TileData::tiles[i].getId());
                     if (TileData::tiles[i].isSolid()) bufferV.push_back(1);
@@ -39,6 +39,8 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
                 }
             }
         }
+        colMap.push_back(bufferV);
+        bufferV.clear();
     }
 
     if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
