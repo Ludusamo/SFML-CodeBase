@@ -161,8 +161,8 @@ void MapGenerator::clear_resources(void) {
 
 uint32_t MapGenerator::get_solids(void) {
     uint32_t count = 0;
-    for(uint32_t i = 0; i < this->generation.size(); i++)
-        for(uint32_t j = 0; j < this->generation[0].size(); j++)
+    for(uint32_t i = 0 + this->walls; i < this->generation.size() - this->walls; i++)
+        for(uint32_t j = 0 + this->walls; j < this->generation[0].size() - this->walls; j++)
             count += generation[i][j] == 1 ? 1 : 0;
     return count;
 }

@@ -723,24 +723,20 @@
 	<iostream>
 	"MainMenuScreen.h"
 
-1386820459 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/MapGenerator.cpp
+1386822396 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/MapGenerator.cpp
 	"MapGenerator.h"
-	<iostream>
 	<stdlib.h>
 	<stdint.h>
 	<string>
 	<vector>
-	<utility>
 	<fstream>
 	<assert.h>
 
-1386821296 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/MapGenerator.h
-	<iostream>
+1386821709 /home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/include/MapGenerator.h
 	<stdlib.h>
 	<stdint.h>
 	<string>
 	<vector>
-	<utility>
 	<fstream>
 	<assert.h>
 
@@ -772,7 +768,7 @@
 1386820352 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/src/Transition.cpp
 	"Transition.h"
 
-1386821246 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/main.cpp
+1386822344 source:/home/alesta/Projects/Games/SFML/SFML-CodeBase/Platformer/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
