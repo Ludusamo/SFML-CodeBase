@@ -85,7 +85,6 @@ MapGenerator::Component& MapGenerator::Component::operator=(const MapGenerator::
 void MapGenerator::Component::paint_to(std::vector<std::vector<int16_t> > &generation) {
     uint32_t xpos = std::rand() % generation.size();
     uint32_t ypos = std::rand() % generation[0].size();
-    std::cout << xpos << " " << ypos << std::endl;
     for(uint32_t x = xpos; x < xpos + this->componentMap.size(); x++) {
         if(x >= generation.size())
             break;

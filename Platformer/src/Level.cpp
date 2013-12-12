@@ -9,33 +9,45 @@ Level::~Level() {
 }
 
 void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) {
-    std::ifstream in(file);
-    in >> width >> height;
+    sf::Image image;
+    if (!image.loadFromFile("res/lvls/testpng.png"))
+        std::cout << "Cannot Load Level." << std::endl;
+    width = image.getSize().x;
+    height = image.getSize().y;
+
+    // Shaders
+    if (shader.isAvailable())
+        if (!shader.loadFromFile("res/shaders/AmbientShader.glsl", sf::Shader::Fragment))
+            std::cout << "Cannot load shader." << std::endl;
+    shader.setParameter("texture", sf::Shader::CurrentTexture);
+    ambientColor.x = 0.3f;
+    ambientColor.y = 0.3f;
+    ambientColor.z = 0.7f;
+
+    shader.setParameter("ambientColor", ambientColor.x, ambientColor.y, ambientColor.z, ambientIntensity);
 
     // Loading Map
-    int buffer;
-    for (int i = 0; i < width * height; i++) {
-        in >> buffer;
-        tiles.push_back(buffer);
-    }
-
-    // Loading Collision Map
     std::vector<int> bufferV;
     for (int y = 0; y < height; y++) {
         for (int x = 0; x < width; x++) {
-            in >> buffer;
-            bufferV.push_back(buffer);
+            for (int i = 0; i < 256; i++) {
+                if (image.getPixel(x, y) == TileData::tiles[i].getLevelColor()) {
+                    tiles.push_back(TileData::tiles[i].getId());
+                    if (TileData::tiles[i].isSolid()) bufferV.push_back(1);
+                    else bufferV.push_back(0);
+                    break;
+                }
+            }
         }
         colMap.push_back(bufferV);
         bufferV.clear();
     }
-    in.close();
 
     if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
         std::cout << "Map could not be loaded." << std::endl;
 
     pTex.loadFromFile("res/imgs/player.png");
-    player.load(sf::Vector2f(2, 7), pTex, 2, sf::Vector2i(16, 16));
+    player.load(sf::Vector2f(2, 2), pTex, 2, sf::Vector2i(32, 32));
 }
 
 void Level::generateLevel() {
@@ -52,8 +64,24 @@ void Level::update() {
 }
 
 void Level::render(sf::RenderWindow &window) {
-    window.draw(tmap);
-    window.draw(player);
+    window.draw(tmap, &shader);
+    window.draw(player, &shader);
+}
+
+void Level::switchTime(bool day) {
+    if (day) {
+        ambientIntensity = 1.0f;
+        ambientColor.x = 1.0f;
+        ambientColor.y = 1.0f;
+        ambientColor.z = 1.0f;
+        shader.setParameter("ambientColor", ambientColor.x, ambientColor.y, ambientColor.z, ambientIntensity);
+    } else {
+        ambientIntensity = .7f;
+        ambientColor.x = .3f;
+        ambientColor.y = .3f;
+        ambientColor.z = .7f;
+        shader.setParameter("ambientColor", ambientColor.x, ambientColor.y, ambientColor.z, ambientIntensity);
+    }
 }
 
 Player &Level::getPlayer() {
@@ -62,4 +90,12 @@ Player &Level::getPlayer() {
 
 std::vector<std::vector<int>> Level::getColMap() {
     return colMap;
+}
+
+int Level::getWidth() {
+    return width;
+}
+
+int Level::getHeight() {
+    return height;
 }

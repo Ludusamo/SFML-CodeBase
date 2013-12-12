@@ -4,7 +4,10 @@
 #include <SFML/System.hpp>
 #include "ScreenManager.h"
 #include "TileData.h"
+<<<<<<< HEAD
 #include "MapGenerator.h"
+=======
+>>>>>>> upstream/master
 
 int main() {
     MapGenerator test("res/lvls/1.comp");

@@ -2,6 +2,7 @@
 #define ENTITY_H
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 #define FRICTION 0.9
 
@@ -10,7 +11,7 @@ public:
     Entity();
     ~Entity();
 
-    virtual void load(sf::Texture &texture);
+    virtual void load(sf::Vector2f &pos, sf::Texture &texture);
     virtual void unload();
     virtual void update();
 protected:
@@ -23,7 +24,6 @@ protected:
         target.draw(vertices, states);
     }
 private:
-
 };
 
 #endif // ENTITY_H

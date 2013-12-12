@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <Entity.h>
+#include <Animation.h>
 #include <iostream>
 #include <math.h>
 
@@ -22,12 +23,16 @@ public:
     void setAccelerationY(float a);
     void setVelocityX(float v);
     void setVelocityY(float v);
+    Animation &getAnimation();
 protected:
+    // Physics
     sf::Vector2f velocity;
     sf::Vector2f acceleration;
-
     float MAX_VEL;
+
+    // Graphics
     sf::Vector2i mSize;
+    Animation animation;
 
     // Collision
     std::vector<sf::FloatRect> collidable;
@@ -36,6 +41,8 @@ protected:
     int startX, endX, startY, endY;
 private:
     void collidableTiles(std::vector<std::vector<int>> colMap, int startX, int endX, int startY, int endY);
+    bool contains(sf::FloatRect x, sf::FloatRect y);
+    enum direction { UP, DOWN, LEFT, RIGHT };
 };
 
 #endif // MOB_H
