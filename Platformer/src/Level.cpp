@@ -8,14 +8,7 @@ Level::~Level() {
     //dtor
 }
 
-void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) {
-    sf::Image image;
-    if (!image.loadFromFile("res/lvls/testpng.png"))
-        std::cout << "Cannot Load Level." << std::endl;
-    width = image.getSize().x;
-    height = image.getSize().y;
-
-    // Shaders
+void Level::load() {
     if (shader.isAvailable())
         if (!shader.loadFromFile("res/shaders/AmbientShader.glsl", sf::Shader::Fragment))
             std::cout << "Cannot load shader." << std::endl;
@@ -25,6 +18,17 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
     ambientColor.z = 0.7f;
 
     shader.setParameter("ambientColor", ambientColor.x, ambientColor.y, ambientColor.z, ambientIntensity);
+
+    pTex.loadFromFile("res/imgs/player.png");
+    player.load(sf::Vector2f(2, 2), pTex, 2, sf::Vector2i(32, 32));
+}
+
+void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) {
+    sf::Image image;
+    if (!image.loadFromFile("res/lvls/testpng.png"))
+        std::cout << "Cannot Load Level." << std::endl;
+    width = image.getSize().x;
+    height = image.getSize().y;
 
     // Loading Map
     std::vector<int> bufferV;
@@ -45,13 +49,39 @@ void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) 
 
     if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
         std::cout << "Map could not be loaded." << std::endl;
-
-    pTex.loadFromFile("res/imgs/player.png");
-    player.load(sf::Vector2f(2, 2), pTex, 2, sf::Vector2i(32, 32));
 }
 
-void Level::generateLevel() {
+void Level::saveLevel(std::string levelName) {
+    sf::Image image;
+    image.create(width, height, sf::Color::Black);
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            image.setPixel(x, y, TileData::tiles[tiles[x + y * width]].getLevelColor());
+        }
+    }
+    image.saveToFile("res/lvls/" + levelName);
+}
 
+void Level::generateLevel(const std::string& tilesetFile, int widthB, int heightB) {
+    width = widthB;
+    height = heightB;
+
+    MapGenerator test("res/lvls/1.comp");
+    std::vector<std::vector<int16_t> > levelBuffer = test.generate(width, height, 0.1f);
+
+    std::vector<int> bufferV;
+    for (int x = 0; x < width; x++) {
+        for (int y = 0; y < height; y++) {
+            tiles.push_back(TileData::tiles[levelBuffer[x][y]].getId());
+            if (TileData::tiles[levelBuffer[x][y]].isSolid()) bufferV.push_back(1);
+            else bufferV.push_back(0);
+        }
+        colMap.push_back(bufferV);
+        bufferV.clear();
+    }
+
+    if (!tmap.load(tilesetFile, sf::Vector2u(32, 32), tiles, width, height))
+        std::cout << "Map could not be loaded." << std::endl;
 }
 
 void Level::unload() {

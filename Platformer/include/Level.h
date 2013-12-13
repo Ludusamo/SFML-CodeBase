@@ -6,6 +6,7 @@
 #include "TileData.h"
 #include <Tilemap.h>
 #include <Player.h>
+#include "MapGenerator.h"
 #include <vector>
 #include <fstream>
 #include <iostream>
@@ -18,7 +19,10 @@ public:
     Level();
     ~Level();
 
+    void load();
     void loadLevel(const std::string& tilesetFile, const std::string&  file);
+    void saveLevel(std::string levelName);
+    void generateLevel(const std::string& tilesetFile, int widthB, int heightB);
     void unload();
     void update();
     void render(sf::RenderWindow &window);
@@ -32,7 +36,6 @@ public:
     void switchTime(bool day);
 protected:
 private:
-    void generateLevel();
 
     // Map
     int width, height;
