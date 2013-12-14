@@ -1,5 +1,6 @@
 #include "MapGenerator.h"
 
+#include <iostream>
 #include <stdlib.h>
 #include <stdint.h>
 #include <string>
@@ -169,8 +170,8 @@ uint32_t MapGenerator::get_solids(void) {
 
 std::vector<std::vector<int16_t> > MapGenerator::generate(uint32_t width, uint32_t height, float weight) {
     assert(weight < 1 && weight >= 0);
-    for(int i = 0; i < width; i++)
-        this->generation.push_back(std::vector<int16_t>(height, 1));
+    for(int i = 0; i < height; i++)
+        this->generation.push_back(std::vector<int16_t>(width, 1));
     while((float) this->get_solids() / (width * height) > weight) {
         uint32_t index = std::rand() % resources.size();
         this->resources[index].paint_to(this->generation, this->walls);

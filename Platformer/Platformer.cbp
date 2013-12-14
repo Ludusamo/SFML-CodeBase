@@ -64,6 +64,7 @@
 		<Unit filename="include/Level.h" />
 		<Unit filename="include/Light.h" />
 		<Unit filename="include/MainMenuScreen.h" />
+		<Unit filename="include/MapGenerator.h" />
 		<Unit filename="include/Mob.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/Screen.h" />
@@ -86,6 +87,7 @@
 		<Unit filename="src/Level.cpp" />
 		<Unit filename="src/Light.cpp" />
 		<Unit filename="src/MainMenuScreen.cpp" />
+		<Unit filename="src/MapGenerator.cpp" />
 		<Unit filename="src/Mob.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Screen.cpp" />
@@ -97,6 +99,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
