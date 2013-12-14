@@ -61,6 +61,7 @@ public:
 	std::vector<std::string> get_resources(void);
 	bool has_walls(void);
 	uint32_t get_solids(void);
+	void connect_nodes(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2);
 	void check_node(uint32_t x, uint32_t y, bool silent);
 	void fix_generation(void);
 	std::vector<std::vector<int16_t> > generate(uint32_t width, uint32_t height, float weight);
