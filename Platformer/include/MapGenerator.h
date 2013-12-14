@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <utility>
 #include <assert.h>
 
 class MapGenerator {
@@ -33,9 +34,13 @@ private:
         void paint_to(uint32_t xpos, uint32_t ypos, std::vector<std::vector<int16_t> > &generation, bool walls);
     };
 
+    typedef std::pair<uint32_t,uint32_t> coordinate_t;
+
     bool walls;
     std::vector<Component> resources;
     std::vector<std::vector<int16_t> > generation;
+    std::vector<coordinate_t> blacklist;
+    std::vector<std::vector<coordinate_t> > subsets;
 
 public:
 	MapGenerator(void);
@@ -56,6 +61,8 @@ public:
 	std::vector<std::string> get_resources(void);
 	bool has_walls(void);
 	uint32_t get_solids(void);
+	void check_node(uint32_t x, uint32_t y, bool silent);
+	void fix_generation(void);
 	std::vector<std::vector<int16_t> > generate(uint32_t width, uint32_t height, float weight);
 	std::vector<std::vector<int16_t> > generate(uint32_t width, uint32_t height, std::vector<float> weights);
 };

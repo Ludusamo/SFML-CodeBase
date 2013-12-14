@@ -1,11 +1,11 @@
 #include "MapGenerator.h"
 
-#include <iostream>
 #include <stdlib.h>
 #include <stdint.h>
 #include <string>
 #include <vector>
 #include <fstream>
+#include <utility>
 #include <assert.h>
 
 
@@ -168,6 +168,34 @@ uint32_t MapGenerator::get_solids(void) {
     return count;
 }
 
+void MapGenerator::check_node(uint32_t x, uint32_t y, bool silent) {
+    if(this->generation[x][y] != 1) {
+        for(int i = 0; i < this->blacklist.size(); i++)
+            if(x == this->blacklist[i].first && y == this->blacklist[i].second)
+                return;
+        this->blacklist.push_back(std::pair<uint32_t,uint32_t>(x,y));
+        if(!silent)
+            this->subsets.push_back(std::vector<coordinate_t>(0));
+        this->subsets[this->subsets.size() - 1].push_back(std::pair<uint32_t,uint32_t>(x,y));
+        if(x != 0)
+            this->check_node(x - 1, y, true);
+        if(y != 0)
+            this->check_node(x, y - 1, true);
+        if(x != this->generation.size() - 1)
+            this->check_node(x + 1, y, true);
+        if(y != this->generation[0].size() - 1)
+            this->check_node(x, y + 1, true);
+    }
+}
+
+void MapGenerator::fix_generation(void) {
+    for(int x = 0; x < this->generation.size(); x++) {
+        for(int y = 0; y < this->generation[0].size(); y++) {
+            this->check_node(x, y, false);
+        }
+    }
+}
+
 std::vector<std::vector<int16_t> > MapGenerator::generate(uint32_t width, uint32_t height, float weight) {
     assert(weight < 1 && weight >= 0);
     for(int i = 0; i < height; i++)
@@ -176,6 +204,7 @@ std::vector<std::vector<int16_t> > MapGenerator::generate(uint32_t width, uint32
         uint32_t index = std::rand() % resources.size();
         this->resources[index].paint_to(this->generation, this->walls);
     }
+    this->fix_generation();
     return this->generation;
 }
 
