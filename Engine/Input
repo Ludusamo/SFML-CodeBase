@@ -1,0 +1,8 @@
+Load=[image]
+[Load/image1]
+[Load/image2]
+
+Load[Position][Alpha]
+[3443 22][1.0f]
+
+Test
