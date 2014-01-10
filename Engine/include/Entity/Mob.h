@@ -24,6 +24,7 @@ public:
     void setAccelerationY(float a);
     void setVelocityX(float v);
     void setVelocityY(float v);
+    void addAcceleration(sf::Vector2f v);
     Animation &getAnimation();
 protected:
     // Physics

@@ -21,7 +21,7 @@ public:
 
     void load();
     void loadLevel(const std::string& tilesetFile, const std::string&  file);
-    void saveLevel(std::string levelName);
+    void saveLevel();
     void generateLevel(const std::string& tilesetFile, int widthB, int heightB);
     void unload();
     void update();
@@ -36,12 +36,12 @@ public:
     void switchTime(bool day);
 protected:
 private:
-
     // Map
     int width, height;
     std::vector<int> tiles;
     Tilemap tmap;
     std::vector<std::vector<int>> colMap;
+    std::string name;
 
     // Player
     Player player;

@@ -139,3 +139,7 @@ void Mob::setVelocityX(float v) {
 void Mob::setVelocityY(float v) {
     velocity.y = v;
 }
+
+void Mob::addAcceleration(sf::Vector2f v) {
+    acceleration += v;
+}
