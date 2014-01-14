@@ -17,9 +17,9 @@ public:
 
     virtual void load(sf::Vector2f pos, sf::Texture &texture, float MAX_VEL, sf::Vector2i mSize);
     virtual void unload();
-    virtual void update(std::vector<std::vector<int>> colMap);
-    void moveM(std::vector<std::vector<int>> colMap);
-    void checkCollision(std::vector<std::vector<int>> colMap);
+    virtual void update(std::vector<std::vector<int>> colMap, sf::Time delta);
+    void moveM(std::vector<std::vector<int>> colMap, sf::Time delta);
+    void checkCollision(std::vector<std::vector<int>> colMap, sf::Time delta);
     void setAccelerationX(float a);
     void setAccelerationY(float a);
     void setVelocityX(float v);

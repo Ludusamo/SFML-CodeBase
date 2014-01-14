@@ -16,7 +16,7 @@ void Screen::unloadContent() {
 
 }
 
-void Screen::update() {
+void Screen::update(sf::Time delta) {
 
 }
 

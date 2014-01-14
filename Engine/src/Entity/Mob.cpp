@@ -28,32 +28,32 @@ void Mob::unload() {
     vertices.clear();
 }
 
-void Mob::update(std::vector<std::vector<int>> colMap) {
-    moveM(colMap);
+void Mob::update(std::vector<std::vector<int>> colMap, sf::Time delta) {
+    moveM(colMap, delta);
 
     if (acceleration.y < 0) {
         animation.setModifier(UP);
-        animation.update(vertices, mSize);
+        animation.update(vertices, mSize, delta);
     } else if (acceleration.y > 0) {
         animation.setModifier(DOWN);
-        animation.update(vertices, mSize);
+        animation.update(vertices, mSize, delta);
     }
 
     if (acceleration.x < 0) {
         animation.setModifier(LEFT);
-        animation.update(vertices, mSize);
+        animation.update(vertices, mSize, delta);
     } else if (acceleration.x > 0) {
         animation.setModifier(RIGHT);
-        animation.update(vertices, mSize);
+        animation.update(vertices, mSize, delta);
     }
 }
 
-void Mob::moveM(std::vector<std::vector<int>> colMap) {
+void Mob::moveM(std::vector<std::vector<int>> colMap, sf::Time delta) {
     velocity += acceleration;
-    checkCollision(colMap);
+    checkCollision(colMap, delta);
 }
 
-void Mob::checkCollision(std::vector<std::vector<int>> colMap) {
+void Mob::checkCollision(std::vector<std::vector<int>> colMap, sf::Time delta) {
     collision = bounds;
 
     // Checking x-axis

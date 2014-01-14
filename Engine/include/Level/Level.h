@@ -24,7 +24,7 @@ public:
     void saveLevel();
     void generateLevel(const std::string& tilesetFile, int widthB, int heightB);
     void unload();
-    void update();
+    void update(sf::Time delta);
     void render(sf::RenderWindow &window);
     Player &getPlayer();
     std::vector<std::vector<int>> getColMap();

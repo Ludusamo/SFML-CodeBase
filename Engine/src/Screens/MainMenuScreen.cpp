@@ -24,7 +24,7 @@ void MainMenuScreen::unloadContent() {
     Screen::unloadContent();
 }
 
-void MainMenuScreen::update() {
+void MainMenuScreen::update(sf::Time delta) {
     if (input.keyPressed(confirm))
         ScreenManager::getInstance().addScreen(new GameScreen);
 }

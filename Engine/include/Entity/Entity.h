@@ -13,7 +13,7 @@ public:
 
     virtual void load(sf::Vector2f &pos, sf::Texture &texture);
     virtual void unload();
-    virtual void update();
+    virtual void update(sf::Time delta);
 protected:
     sf::VertexArray vertices;
     sf::Texture tex;

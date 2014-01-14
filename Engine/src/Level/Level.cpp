@@ -20,7 +20,7 @@ void Level::load() {
     shader.setParameter("ambientColor", ambientColor.x, ambientColor.y, ambientColor.z, ambientIntensity);
 
     pTex.loadFromFile("res/imgs/player.png");
-    player.load(sf::Vector2f(2, 2), pTex, 4, sf::Vector2i(32, 32));
+    player.load(sf::Vector2f(2, 2), pTex, 2, sf::Vector2i(32, 32));
 }
 
 void Level::loadLevel(const std::string& tilesetFile, const std::string&  file) {
@@ -90,9 +90,9 @@ void Level::unload() {
     player.unload();
 }
 
-void Level::update() {
-    player.addAcceleration(sf::Vector2f(0, 9.8));
-    player.update(colMap);
+void Level::update(sf::Time delta) {
+//    player.addAcceleration(sf::Vector2f(0, 9.8));
+    player.update(colMap, delta);
 }
 
 void Level::render(sf::RenderWindow &window) {

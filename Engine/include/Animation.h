@@ -11,7 +11,7 @@ public:
 
     void load(int startIndexX, int startIndexY, int totalFrames, float delay);
     void unload();
-    void update(sf::VertexArray &vertices, sf::Vector2i mSize);
+    void update(sf::VertexArray &vertices, sf::Vector2i mSize, sf::Time delta);
     void setModifier(int x);
 protected:
 private:

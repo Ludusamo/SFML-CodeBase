@@ -12,7 +12,7 @@ public:
 
     void loadContent();
     void unloadContent();
-    void update();
+    void update(sf::Time delta);
     void render(sf::RenderWindow &window);
 protected:
 private:

@@ -23,6 +23,6 @@ void Entity::unload() {
     vertices.clear();
 }
 
-void Entity::update() {
+void Entity::update(sf::Time delta) {
 
 }

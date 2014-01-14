@@ -1118,7 +1118,7 @@
 1389059644 source:/home/brehor/Copy/Ludusamo/Programming/SFML/1GAM-Respawn/Respawn/src/Transition/FadeTransition.cpp
 	"Transition/FadeTransition.h"
 
-1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/main.cpp
+1389660231 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
@@ -1127,7 +1127,7 @@
 	"Level/TileData.h"
 	"MapGenerator.h"
 
-1389313547 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/System/ScreenManager.h
+1389658116 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/System/ScreenManager.h
 	<SFML/Graphics.hpp>
 	"Screens/Screen.h"
 	"Screens/MainMenuScreen.h"
@@ -1136,7 +1136,7 @@
 	"Transition/FadeTransition.h"
 	"FileManager.h"
 
-1389313547 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/Screen.h
+1389658116 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/Screen.h
 	"SFML/Graphics.hpp"
 	"System/InputManager.h"
 
@@ -1144,24 +1144,24 @@
 	<vector>
 	<SFML/Graphics.hpp>
 
-1389313547 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/MainMenuScreen.h
+1389658116 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/MainMenuScreen.h
 	"Screens/Screen.h"
 	"System/ScreenManager.h"
 	<SFML/Graphics.hpp>
 
-1389313547 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/SplashScreen.h
+1389658799 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/SplashScreen.h
 	"Screens/Screen.h"
 	"System/ScreenManager.h"
 	"Screens/MainMenuScreen.h"
 	<SFML/Graphics.hpp>
 
-1389313547 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/GameScreen.h
+1389658116 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Screens/GameScreen.h
 	"Screens/Screen.h"
 	"System/ScreenManager.h"
 	"Level/Level.h"
 	<SFML/Graphics.hpp>
 
-1389316812 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Level/Level.h
+1389658998 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Level/Level.h
 	<string>
 	<SFML/Graphics.hpp>
 	"TileData.h"
@@ -1187,7 +1187,7 @@
 	<SFML/Graphics.hpp>
 	"Entity/Mob.h"
 
-1389315585 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Entity/Mob.h
+1389659133 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Entity/Mob.h
 	<SFML/Graphics.hpp>
 	"Entity/Mob.h"
 	"Entity/Entity.h"
@@ -1195,11 +1195,11 @@
 	<iostream>
 	<math.h>
 
-1389315246 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Entity/Entity.h
+1389659052 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Entity/Entity.h
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1389313547 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Animation.h
+1389659856 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/Animation.h
 	<SFML/Graphics.hpp>
 	<iostream>
 
@@ -1227,13 +1227,13 @@
 	<iostream>
 	<sstream>
 
-1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Animation.cpp
+1389659874 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Animation.cpp
 	"Animation.h"
 
-1389315244 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Entity/Entity.cpp
+1389659092 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Entity/Entity.cpp
 	"Entity/Entity.h"
 
-1389315859 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Entity/Mob.cpp
+1389659980 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Entity/Mob.cpp
 	"Entity/Mob.h"
 
 1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Entity/Player.cpp
@@ -1246,7 +1246,7 @@
 	"SFML/Graphics.hpp"
 	"Entity/Entity.h"
 
-1389316802 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Level/Level.cpp
+1389660387 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Level/Level.cpp
 	"Level/Level.h"
 
 1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Level/TileData.cpp
@@ -1275,17 +1275,17 @@
 	<utility>
 	<assert.h>
 
-1389316546 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/GameScreen.cpp
+1389659239 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/GameScreen.cpp
 	"Screens/GameScreen.h"
 
-1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/MainMenuScreen.cpp
+1389658116 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/MainMenuScreen.cpp
 	<iostream>
 	"Screens/MainMenuScreen.h"
 
-1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/Screen.cpp
+1389658116 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/Screen.cpp
 	"Screens/Screen.h"
 
-1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/SplashScreen.cpp
+1389658947 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Screens/SplashScreen.cpp
 	<iostream>
 	"Screens/SplashScreen.h"
 
@@ -1306,7 +1306,7 @@
 1388438268 /home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/include/System/Vector2f.h
 	<math.h>
 
-1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/System/ScreenManager.cpp
+1389658116 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/System/ScreenManager.cpp
 	"System/ScreenManager.h"
 
 1389313547 source:/home/brehor/Copy/Ludusamo/Programming/SFML/SFML-CodeBase/Engine/src/Transition/FadeAnimation.cpp

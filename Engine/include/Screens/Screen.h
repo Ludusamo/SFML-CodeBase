@@ -10,7 +10,7 @@ public:
 
     virtual void loadContent();
     virtual void unloadContent();
-    virtual void update();
+    virtual void update(sf::Time delta);
     virtual void render(sf::RenderWindow &window);
 protected:
     InputManager input;

@@ -7,14 +7,6 @@
 #include "MapGenerator.h"
 
 int main() {
-    //MapGenerator test("res/lvls/1.comp");
-    //std::vector<std::vector<int16_t> > testvec = test.generate(20, 20, 0.5f);
-    //for(int i = 0; i < testvec.size(); i++) {
-    //    for(int j = 0; j < testvec[0].size(); j++)
-    //        std::cout << testvec[i][j] << " ";
-    //    std::cout << std::endl;
-    //}
-
     // Window
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT, 32), "SFML Platformer");
 
@@ -24,8 +16,8 @@ int main() {
 
     // Timing
     sf::Clock clock;
-    float delta;
-    const int ups = 60; // Updates Per Second
+    sf::Time delta;
+    const sf::Time ups = sf::seconds(1.0f / 120.0f); // Updates Per Second
 
     // Main Game Loop
     while (window.isOpen()) {
@@ -40,17 +32,18 @@ int main() {
         window.clear();
 
         // Timing
-        delta += clock.restart().asSeconds();
+        delta += clock.restart();
 
-        // Update and Render Cycles: CURRENTLY LIMITED AT 60 UPS
-        if (delta >= 1 / ups) {
-            ScreenManager::getInstance().update(window);
-            ScreenManager::getInstance().render(window);
-            delta = 0;
+        // Update Cycles: CURRENTLY LIMITED AT 120 UPS
+        if (delta >= ups) {
+            ScreenManager::getInstance().update(window, delta);
+            delta = sf::Time::Zero;
         }
+        ScreenManager::getInstance().render(window);
 
-        // Just Displays the Screen
+         // Just Displays the Screen
         window.display();
+
     }
 
     return 0;

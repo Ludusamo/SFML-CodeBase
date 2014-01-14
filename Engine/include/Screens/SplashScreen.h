@@ -13,7 +13,7 @@ public:
 
     void loadContent();
     void unloadContent();
-    void update();
+    void update(sf::Time delta);
     void render(sf::RenderWindow &window);
 protected:
 private:
@@ -21,7 +21,7 @@ private:
     sf::Texture logoT;
     sf::Sprite logo;
     sf::Clock clock;
-    float delta;
+    sf::Time elapsed;
 };
 
 #endif // SPLASHSCREEN_H

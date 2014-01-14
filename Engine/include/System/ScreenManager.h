@@ -9,8 +9,8 @@
 #include "Transition/FadeTransition.h"
 #include "FileManager.h"
 
-#define WIDTH 640
-#define HEIGHT 640
+#define WIDTH 800
+#define HEIGHT 600
 
 class ScreenManager {
 public:
@@ -20,7 +20,7 @@ public:
     void initialize();
     void loadContent();
     void switchScreen();
-    void update(sf::RenderWindow &window);
+    void update(sf::RenderWindow &window, sf::Time delta);
     void render(sf::RenderWindow &window);
 
     void addScreen(Screen *screen);

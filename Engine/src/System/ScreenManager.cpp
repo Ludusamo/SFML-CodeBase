@@ -59,8 +59,8 @@ void ScreenManager::switchScreen() {
     currentScreen->loadContent();
 }
 
-void ScreenManager::update(sf::RenderWindow &window) {
-    if (!transition) currentScreen->update();
+void ScreenManager::update(sf::RenderWindow &window, sf::Time delta) {
+    if (!transition) currentScreen->update(delta);
     else Transition(window);
 }
 

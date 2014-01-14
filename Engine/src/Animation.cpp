@@ -22,8 +22,8 @@ void Animation::unload() {
 
 }
 
-void Animation::update(sf::VertexArray &vertices, sf::Vector2i mSize) {
-    elapsedTime += 0.016;
+void Animation::update(sf::VertexArray &vertices, sf::Vector2i mSize, sf::Time delta) {
+    elapsedTime += delta.asSeconds();
     if (elapsedTime > delay) {
         if (currentAnimationIndex + 1 < totalFrames) currentAnimationIndex++;
         else currentAnimationIndex = 0;
