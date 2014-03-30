@@ -19,7 +19,6 @@ protected:
 private:
     sf::Texture tex;
     Component main;
-    Button b;
     sf::Text text;
     sf::Font font;
     std::vector<sf::Keyboard::Key> confirm;

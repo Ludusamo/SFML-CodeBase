@@ -20,6 +20,7 @@ void MainMenuScreen::loadContent() {
     confirm.push_back(sf::Keyboard::Space);
 
     sf::Texture tex1;
+    Button b;
     tex1.loadFromFile("res/imgs/player.png");
     b.load(sf::Vector2f(320, 500), tex1, sf::Vector2f(0, 0), sf::Vector2f(64, 32));
 
