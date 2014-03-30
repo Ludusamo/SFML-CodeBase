@@ -21,7 +21,8 @@ void SplashScreen::unloadContent() {
     Screen::unloadContent();
 }
 
-void SplashScreen::update(sf::Time delta) {
+void SplashScreen::update(sf::Time &delta) {
+    Screen::update(delta);
     elapsed += delta;
     if (elapsed.asSeconds() >= 2) {
         ScreenManager::getInstance().addScreen(new MainMenuScreen);
@@ -29,5 +30,6 @@ void SplashScreen::update(sf::Time delta) {
 }
 
 void SplashScreen::render(sf::RenderWindow &window) {
+    Screen::render(window);
     window.draw(logo);
 }

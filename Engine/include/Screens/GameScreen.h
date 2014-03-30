@@ -6,6 +6,9 @@
 #include "Level/Level.h"
 #include <SFML/Graphics.hpp>
 
+#include "Entity/Entity.h"
+#include "Entity/Mob.h"
+
 class GameScreen : public Screen {
 public:
     GameScreen();
@@ -13,7 +16,7 @@ public:
 
     void loadContent();
     void unloadContent();
-    void update(sf::Time delta);
+    void update(sf::Time &delta);
     void render(sf::RenderWindow &window);
 protected:
 private:

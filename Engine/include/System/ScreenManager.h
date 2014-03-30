@@ -9,8 +9,8 @@
 #include "Transition/FadeTransition.h"
 #include "FileManager.h"
 
-#define WIDTH 800
-#define HEIGHT 600
+#define WIDTH 640
+#define HEIGHT 640
 
 class ScreenManager {
 public:

@@ -33,7 +33,8 @@ void GameScreen::unloadContent() {
     level.unload();
 }
 
-void GameScreen::update(sf::Time delta) {
+void GameScreen::update(sf::Time &delta) {
+    Screen::update(delta);
     level.update(delta);
 
     if (level.getPlayer().getPosition().x - (WIDTH / SCALE / 2) < 0) center.x = (WIDTH / SCALE / 2);
@@ -59,6 +60,7 @@ void GameScreen::update(sf::Time delta) {
 }
 
 void GameScreen::render(sf::RenderWindow &window) {
+    Screen::render(window);
     level.render(window);
     mainView = window.getDefaultView();
     mainView.zoom(1 / SCALE);

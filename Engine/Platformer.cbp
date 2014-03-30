@@ -70,6 +70,7 @@
 		<Unit filename="include/Screens/MainMenuScreen.h" />
 		<Unit filename="include/Screens/Screen.h" />
 		<Unit filename="include/Screens/SplashScreen.h" />
+		<Unit filename="include/System/Component.h" />
 		<Unit filename="include/System/FileManager.h" />
 		<Unit filename="include/System/InputManager.h" />
 		<Unit filename="include/System/Physics.h" />
@@ -96,6 +97,7 @@
 		<Unit filename="src/Screens/MainMenuScreen.cpp" />
 		<Unit filename="src/Screens/Screen.cpp" />
 		<Unit filename="src/Screens/SplashScreen.cpp" />
+		<Unit filename="src/System/Component.cpp" />
 		<Unit filename="src/System/FileManager.cpp" />
 		<Unit filename="src/System/InputManager.cpp" />
 		<Unit filename="src/System/Physics.cpp" />

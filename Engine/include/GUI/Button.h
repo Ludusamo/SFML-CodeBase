@@ -10,27 +10,19 @@ class Button : public Entity
         Button();
         ~Button();
 
-        void load(const std::string& message, sf::Vector2f pos, const sf::Texture& sprites, const sf::Font& font);
+        void load(sf::Vector2f pos, const sf::Texture& tex, sf::Vector2f texCoord, sf::Vector2f texDimensions);
         void unload();
-        void update(sf::Vector2i p);
+        void update(sf::Vector2i &p);
 
         enum State { SAME, HIGHLIGHTED };
     protected:
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const {
-        states.transform *= getTransform();
-        states.texture = &sprites;
-        target.draw(vertices, states);
-        target.draw(message, states);
-    }
-    private:
     void highlight(int change);
-    sf::Vector2f pos;
+    sf::Vector2f pos, texCoord, texDimensions;
     sf::FloatRect bounds;
     int change;
+    private:
+
     std::string msg;
-    sf::Texture sprites;
-    sf::Text message;
-    sf::Font font;
 };
 
 #endif // BUTTON_H

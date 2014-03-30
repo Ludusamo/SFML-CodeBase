@@ -1,89 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="src/Screens/GameScreen.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/Screens/Screen.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2732" topLine="38" />
+			<Cursor1 position="427" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/Entity/Entity.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/Screens/MainMenuScreen.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="385" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/System/Physics.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="179" topLine="0" />
+			<Cursor1 position="1134" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="2" />
-			<Collapse line="6" />
-			<Collapse line="10" />
-			<Collapse line="14" />
-			<Collapse line="18" />
-			<Collapse line="19" />
-			<Collapse line="24" />
-			<Collapse line="28" />
-		</Folding>
-	</File>
-	<File name="include/Light.h" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="59" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/GUI/Button.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="81" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/System/ScreenManager.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="533" topLine="8" />
-		</Cursor>
-	</File>
-	<File name="src/Level/Level.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2933" topLine="65" />
-		</Cursor>
-		<Folding>
-			<Collapse line="2" />
-			<Collapse line="6" />
-			<Collapse line="65" />
-			<Collapse line="73" />
-			<Collapse line="74" />
-			<Collapse line="87" />
-			<Collapse line="97" />
-			<Collapse line="118" />
-			<Collapse line="122" />
-			<Collapse line="126" />
-			<Collapse line="130" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="917" topLine="21" />
-		</Cursor>
-	</File>
-	<File name="include/Screens/GameScreen.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="321" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/Transition/FadeAnimation.cpp" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="37" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/Level/TileData.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="16" topLine="0" />
-		</Cursor>
-		<Folding>
+			<Collapse line="3" />
+			<Collapse line="7" />
 			<Collapse line="11" />
-			<Collapse line="19" />
-			<Collapse line="23" />
-			<Collapse line="27" />
-			<Collapse line="31" />
+			<Collapse line="33" />
+		</Folding>
+	</File>
+	<File name="include/Screens/MainMenuScreen.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="467" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Transition/FadeTransition.cpp" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="38" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
 		</Folding>
 	</File>
 	<File name="include/System/FileManager.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -91,79 +35,41 @@
 			<Cursor1 position="228" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/Entity/Mob.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/GUI/Button.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3000" topLine="48" />
+			<Cursor1 position="524" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="6" />
-			<Collapse line="10" />
-			<Collapse line="26" />
-			<Collapse line="67" />
-			<Collapse line="68" />
-			<Collapse line="84" />
-			<Collapse line="86" />
-			<Collapse line="105" />
-			<Collapse line="107" />
-			<Collapse line="108" />
-			<Collapse line="109" />
-			<Collapse line="120" />
-			<Collapse line="126" />
-			<Collapse line="130" />
-			<Collapse line="134" />
-			<Collapse line="138" />
-			<Collapse line="142" />
-		</Folding>
-	</File>
-	<File name="src/System/InputManager.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="17" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/Screens/SplashScreen.cpp" open="0" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="591" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="3" />
 			<Collapse line="7" />
-			<Collapse line="11" />
-			<Collapse line="19" />
 		</Folding>
-	</File>
-	<File name="include/Screens/Screen.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="254" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/Animation.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="328" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/GUI/Button.cpp" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="14" topLine="0" />
-		</Cursor>
 	</File>
 	<File name="include/Level/Level.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="577" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="include/Entity/Mob.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/Level/Level.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="603" topLine="0" />
+			<Cursor1 position="2197" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="10" />
+			<Collapse line="25" />
+			<Collapse line="35" />
+			<Collapse line="36" />
+			<Collapse line="37" />
+			<Collapse line="38" />
+			<Collapse line="54" />
+			<Collapse line="57" />
+			<Collapse line="58" />
+			<Collapse line="92" />
+			<Collapse line="102" />
+			<Collapse line="103" />
+		</Folding>
 	</File>
-	<File name="include/Screens/MainMenuScreen.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/System/ScreenManager.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="316" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/System/ScreenManager.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1393" topLine="12" />
+			<Cursor1 position="914" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="4" />
@@ -174,29 +80,158 @@
 			<Collapse line="42" />
 		</Folding>
 	</File>
-	<File name="src/Transition/FadeTransition.cpp" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/System/Physics.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="38" topLine="0" />
+			<Cursor1 position="179" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/System/ScreenManager.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="308" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="2" />
+			<Collapse line="14" />
 		</Folding>
 	</File>
-	<File name="src/Entity/Player.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/System/FileManager.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="17" topLine="0" />
+			<Cursor1 position="1560" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="15" />
+			<Collapse line="17" />
+			<Collapse line="18" />
+			<Collapse line="25" />
+			<Collapse line="38" />
+			<Collapse line="40" />
+			<Collapse line="48" />
+		</Folding>
 	</File>
-	<File name="src/Screens/MainMenuScreen.cpp" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/System/Component.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="589" topLine="0" />
+			<Cursor1 position="485" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="24" />
+			<Collapse line="28" />
+		</Folding>
+	</File>
+	<File name="src/System/Component.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1010" topLine="5" />
 		</Cursor>
 		<Folding>
 			<Collapse line="3" />
-			<Collapse line="7" />
-			<Collapse line="11" />
+			<Collapse line="32" />
+			<Collapse line="33" />
+			<Collapse line="38" />
+			<Collapse line="42" />
+		</Folding>
+	</File>
+	<File name="src/Animation.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="556" topLine="8" />
+		</Cursor>
+		<Folding>
+			<Collapse line="37" />
+		</Folding>
+	</File>
+	<File name="include/System/Physics.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="190" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Transition/Transition.cpp" open="0" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="21" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
+			<Collapse line="6" />
+			<Collapse line="10" />
 			<Collapse line="22" />
+			<Collapse line="26" />
+			<Collapse line="30" />
+			<Collapse line="38" />
+			<Collapse line="42" />
+			<Collapse line="46" />
+		</Folding>
+	</File>
+	<File name="include/Entity/Player.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="87" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/Entity/Mob.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="603" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src/Screens/SplashScreen.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="814" topLine="0" />
+		</Cursor>
+		<Folding>
 			<Collapse line="31" />
+		</Folding>
+	</File>
+	<File name="src/Entity/Mob.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="642" topLine="27" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
+			<Collapse line="10" />
+			<Collapse line="50" />
+			<Collapse line="116" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="917" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src/Level/Tilemap.cpp" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="16" topLine="9" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
+			<Collapse line="6" />
+			<Collapse line="40" />
+			<Collapse line="44" />
+		</Folding>
+	</File>
+	<File name="include/Entity/Entity.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="339" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Screens/Screen.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="223" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="10" />
+		</Folding>
+	</File>
+	<File name="include/Screens/SplashScreen.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="338" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/Screens/GameScreen.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="369" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Entity/Player.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="240" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="25" />
 		</Folding>
 	</File>
 	<File name="src/MapGenerator.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -248,80 +283,68 @@
 			<Collapse line="242" />
 		</Folding>
 	</File>
-	<File name="include/System/Physics.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/GUI/Button.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="190" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/Animation.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="554" topLine="0" />
+			<Cursor1 position="1395" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="2" />
-			<Collapse line="6" />
-			<Collapse line="10" />
-			<Collapse line="20" />
-			<Collapse line="26" />
+			<Collapse line="3" />
+			<Collapse line="8" />
+			<Collapse line="12" />
 			<Collapse line="37" />
+			<Collapse line="51" />
 		</Folding>
 	</File>
-	<File name="src/Transition/Transition.cpp" open="0" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/Animation.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="21" topLine="0" />
+			<Cursor1 position="328" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Screens/GameScreen.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2698" topLine="33" />
 		</Cursor>
 		<Folding>
 			<Collapse line="2" />
 			<Collapse line="6" />
-			<Collapse line="10" />
-			<Collapse line="22" />
-			<Collapse line="26" />
-			<Collapse line="30" />
-			<Collapse line="38" />
-			<Collapse line="42" />
-			<Collapse line="46" />
+			<Collapse line="31" />
 		</Folding>
 	</File>
-	<File name="src/Screens/Screen.cpp" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="198" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/Level/Tilemap.cpp" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/Level/TileData.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="16" topLine="0" />
 		</Cursor>
-	</File>
-	<File name="include/Entity/Entity.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="323" topLine="0" />
-		</Cursor>
 		<Folding>
-			<Collapse line="20" />
+			<Collapse line="11" />
+			<Collapse line="19" />
+			<Collapse line="23" />
+			<Collapse line="27" />
+			<Collapse line="31" />
 		</Folding>
 	</File>
-	<File name="src/System/FileManager.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/Transition/FadeAnimation.cpp" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1560" topLine="0" />
+			<Cursor1 position="37" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/System/InputManager.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="17" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Entity/Entity.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="385" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="15" />
-			<Collapse line="17" />
-			<Collapse line="18" />
-			<Collapse line="25" />
-			<Collapse line="38" />
-			<Collapse line="40" />
-			<Collapse line="48" />
+			<Collapse line="2" />
+			<Collapse line="6" />
+			<Collapse line="21" />
 		</Folding>
 	</File>
-	<File name="include/Screens/SplashScreen.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/Light.h" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="515" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/Entity/Player.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="87" topLine="0" />
+			<Cursor1 position="59" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

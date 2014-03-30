@@ -18,17 +18,30 @@ void MainMenuScreen::loadContent() {
 
     confirm.push_back(sf::Keyboard::Return);
     confirm.push_back(sf::Keyboard::Space);
+
+    sf::Texture tex1;
+    tex1.loadFromFile("res/imgs/player.png");
+    b.load(sf::Vector2f(320, 500), tex1, sf::Vector2f(0, 0), sf::Vector2f(64, 32));
+
+    if (tex.loadFromFile("res/imgs/TitleScreen.png")) std::cout << "success";
+    main.load(sf::Vector2f(0,0), sf::Vector2f(640,640), tex);
+    main.addButton(b);
+    components.push_back(main);
+
+    std::cout << components[0].getButtons().size() << std::endl;
 }
 
 void MainMenuScreen::unloadContent() {
     Screen::unloadContent();
 }
 
-void MainMenuScreen::update(sf::Time delta) {
+void MainMenuScreen::update(sf::Time &delta) {
+    Screen::update(delta);
     if (input.keyPressed(confirm))
         ScreenManager::getInstance().addScreen(new GameScreen);
 }
 
 void MainMenuScreen::render(sf::RenderWindow &window) {
+    Screen::render(window);
     window.draw(text);
 }
